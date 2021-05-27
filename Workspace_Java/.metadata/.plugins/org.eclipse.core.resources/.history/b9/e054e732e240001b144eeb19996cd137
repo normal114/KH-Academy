@@ -1,0 +1,21 @@
+package com.Test02;
+
+public class Sugar extends Product {
+
+	private String type;
+	private int weight;
+	
+	public Sugar() {
+		
+	}
+	public Suger(int productCode, String productName, String type, int weight) {
+		super(productCode, productName);
+		this.type = type;
+		this.weight = weight;
+	}
+	@Override
+	public void makeProduct() {
+		
+	}
+
+}

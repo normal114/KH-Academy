@@ -1,0 +1,165 @@
+package com.mvc.semi.model.BoardDao;
+
+import java.util.List;
+
+import org.mybatis.spring.SqlSessionTemplate;
+
+import com.mvc.semi.model.BoardDto.BoardDto;
+
+@Repository
+public class BoardDaoImpl implements BoardDao {
+
+	@Autowired
+	private SqlSessionTemplate sqlSession;
+	
+	@Override
+	public List<BoardDto> accompany_selectList() {
+	
+		List<BoardDto> list = new ArrayList<BoardDto>();
+		
+		try {
+			list = sqlSession.selectList(NAMESPACE + "accompany_selectList");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+		return list;
+	}
+
+	@Override
+	public List<BoardDto> notice_selectList() {
+		
+		List<BoardDto> list = new ArrayList<BoardDto>();
+		
+		try {
+			list = sqlSession.selectList(NAMESPACE + "accompany_selectList");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+		return list;
+	}
+
+	@Override
+	public List<BoardDto> photo_selectList() {
+		
+		List<BoardDto> list = new ArrayList<BoardDto>();
+		
+		try {
+			list = sqlSession.selectList(NAMESPACE + "accompany_selectList");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+		return list;
+	}
+
+	@Override
+	public BoardDto accompany_selectOne(int postId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public BoardDto notice_selectOne(int postId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public BoardDto photo_selectOne(int postId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public int accompany_insert(BoardDto dto) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int photo_insert(BoardDto dto) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int notice_insert(BoardDto dto) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int accompany_update(BoardDto dto) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int photo_update(BoardDto dto) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int notice_update(BoardDto dto) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int accompany_delete(int postId) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int notice_delete(int postId) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public List<BoardDto> notice_selectListPaging(int startRow, int endRow) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<BoardDto> accompany_selectListPaging(int startRow, int endRow) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<BoardDto> photo_selectListPaging(int startRow, int endRow) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public int accompanyGetTotalCount() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int noticeGetTotalCount() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int photoGetTotalCount() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public BoardDto selectOneByPostId(int postId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

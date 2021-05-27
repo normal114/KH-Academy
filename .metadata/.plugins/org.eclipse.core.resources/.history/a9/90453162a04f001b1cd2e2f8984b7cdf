@@ -1,0 +1,57 @@
+package Test;
+
+import java.util.Scanner;
+
+public class StringGame03 {
+
+	public static void main(String[] args) {
+
+		SplitTest();
+		CharAtTest();
+		MiddleTest();
+	}
+
+	static void SplitTest() {
+		String word = "POWER";
+		String[] array_word;
+
+		array_word = word.split(""); // 배열에 한 글자씩 저장하기
+
+		for (int i = 0; i < array_word.length; i++) {
+			System.out.println(array_word[i]);
+		}
+	}
+
+	static void CharAtTest() {
+		String word = "POWER";
+		char[] array_word = new char[word.length()];
+		
+		for(int i = 0; i < array_word.length; i++) {
+			array_word[i] = (word.charAt(i));
+			System.out.println(array_word[i]);
+			
+		}
+	}
+	
+	static void MiddleTest() {
+	
+	Scanner sc = new Scanner(System.in);
+	System.out.println("단어를 입력해주세요");
+	String word = sc.next();
+	
+	String[] array_word = new String[word.length()];
+	String result;
+	
+	for(int i = 0; i < array_word.length; i++ ) {
+		array_word[i] = Character.toString(word.charAt(i));
+	}
+	
+	if(array_word.length % 2 == 0) {
+		result = array_word[(array_word.length/2) - 1];
+	}else {
+		result = array_word[(array_word.length/2)];
+	}
+	System.out.println(result);
+	}
+	
+}

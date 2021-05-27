@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script type="text/javascript">
+
+	function tableVal(){
+		// form 태그들 가져와서, index 0인 form 태그
+		var doc = document.forms[0];
+		// doc.id.value = doc이라는 form태그가 가진, name='id'인 태그의, value값
+		var vals = [doc.id.value, doc.pw.value, doc.addr.value, doc.phone.value];
+		
+		// 유효값 처리
+		for (var i = 0 ; i < vals.length; i++) {
+			if (vals[i] == null || vals[i] == "" || vals[i] == undefined) {
+				alert("모든 항목을 입력해 주세요");
+				break;
+				// return; : return으로 하면 값이 만들어지지 않는다. 따라서 함수 자체를 종료시킨다.
+			}
+		}
+		
+		document.getElementById("addtr").appendChild(createRow(vals));
+	}
+	
+	function createRow(vals){
+		var tr = document.createElement("tr");				// <tr><tr>
+		for (var i = 0; i < vals.length; i++) {				// i=0 -> <tr><td>doc.id.value</td></tr>
+			var td = document.createElement("td");			// i=1 -> <tr><td>doc.id.value</td><td>doc.pw.value</td></tr>
+			td.textContent = vals[i];						// i=2 -> <tr><td>doc.id.value</td><td>doc.pw.value</td></tr><tr><td>doc.addr.value</td></tr>
+			tr.appendChild(td);								// i=3 -> <tr><td>doc.id.value</td><td>doc.pw.value</td></tr><tr><td>doc.addr.value</td></tr><tr><td>doc.phone.value</td></tr>
+		}
+		var dTd = document.createElement("td");
+		dTd.innerHTML = "<input type='button' value='삭제' onclick='delRow(this)'/>";
+		// <td><input type='button' value='삭제' onclick='delRow(this)' /></td>
+		
+		tr.appendChild(dTd);
+		/* <tr>
+				<td>doc.id.value</td>
+				<td>doc.pw.value</td>
+				<td>doc.addr.value</td>
+				<td>doc.phone.value</td>
+				<td><input type='botton' value='삭제'</td>
+		   <tr> 
+		 */
+		
+		return tr;
+	}
+	
+	function deleteVal(){
+		var tbody = document.getElementById("addtr");
+		while(tbody.hasChildNodes()){
+			tbody.removeChild(tbody.lastChild); // while 반복문이다. lastchild가 있으면 지우고 또 있으면 지우고 또 있으면 지우고 반복한다.
+		}
+	}
+	
+	function delRow(ele){
+		var delTr = ele.parentNode.parentNode; // ele는 input태그이다. input태그의 parent는 td이고 td의 parent는 tr이다.
+		var tbody = document.getElementById("addtr");
+		tbody.removeChild(delTr); // 결국 tbody의 tr의 자식개체를 지우라는 명령이다.
+	}
+
+
+</script>
+
+</head>
+<body>
+
+	<form action="????">
+	<!-- name=""는 <form action="????">????에 정보를 넘겨준다. -->
+		<table id="intable">
+			<tr>
+				<td>아이디</td>
+				<td><input type="text" name="id"></td> 
+				
+			</tr>
+			<tr>
+				<td>비밀번호</td>
+				<td><input type="text" name="pw"></td>
+			</tr>
+			<tr>
+				<td>주소</td>
+				<td><input type="text" name="addr"></td>
+			</tr>
+			<tr>
+				<td>전화번호</td>
+				<td><input type="text" name="phone"></td>
+			</tr>
+		</table>
+		<input type="button" value="추가" onclick="tableVal();"/>
+		<input type="button" value="전체삭제" onclick="deleteVal();"/>
+	</form>
+	<div id="addtable">
+		<table border="1" id="ctb">
+			<col width="100px" />
+			<col width="100px" />
+			<col width="300px" />
+			<col width="200px" />
+			<col width="100px" />
+			<thead>
+				<tr>
+					<th>아이디</th>
+					<th>비밀번호</th>
+					<th>주소</th>
+					<th>전화번호</th>
+					<th>삭제</th>
+				</tr>
+			</thead>
+			<tbody id="addtr"></tbody>
+		</table>
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+

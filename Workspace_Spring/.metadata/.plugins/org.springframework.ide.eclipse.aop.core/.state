@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="SpringMVC00"/>
+<aop-project name="SpringMVC03_filter_aop_login_interceptor"/>
+<aop-project name="Spring07_HelloMVC"/>
+<aop-project name="StartBoot03"/>
+<aop-project name="SpringMVC05_update_jdbc"/>
+<aop-project name="Spring05_Annotation"/>
+<aop-project name="Spring06_TestAop01_Test">
+<aspect-definition advice-class-name="com.test01.MyAdvice" advice-method-name="afterReturnSaying" advice-type="AFTER_RETURNING" aspect-end-line-number="20" aspect-name="myAspect" aspect-start-line-number="20" factory-id="org.springframework.ide.eclipse.aop.core.beanAspectDefinitionElementFactory" file="/Spring06_TestAop01_Test/src/com/test01/aopAppcontext.xml" pointcut-expression="execution(public * sayName(..))" proxy-target-class="false">
+<aop-reference advice-type="AFTER_RETURNING" bean="1:BeansModel|2:Spring06_TestAop01_Test|3:src/com/test01/aopAppcontext.xml|7:beans:8|8:person01:10" bean-file="/Spring06_TestAop01_Test/src/com/test01/aopAppcontext.xml" bean-start-line="10" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/Spring06_TestAop01_Test/src/com/test01/aopAppcontext.xml" source="=Spring06_TestAop01_Test/src=/optional=/true=/=/maven.pomderived=/true=/&lt;com.test01{MyAdvice.java[MyAdvice~afterReturnSaying~QJoinPoint;" source-start-line="27" target="=Spring06_TestAop01_Test/src=/optional=/true=/=/maven.pomderived=/true=/&lt;com.test01{Person.java[Person~sayName~QString;" target-start-line="20"/>
+</aspect-definition>
+<aspect-definition advice-class-name="com.test01.MyAdvice" advice-method-name="afterSaying" advice-type="AFTER" aspect-end-line-number="19" aspect-name="myAspect" aspect-start-line-number="19" factory-id="org.springframework.ide.eclipse.aop.core.beanAspectDefinitionElementFactory" file="/Spring06_TestAop01_Test/src/com/test01/aopAppcontext.xml" pointcut-expression="execution(public * sayName(..))" proxy-target-class="false">
+<aop-reference advice-type="AFTER" bean="1:BeansModel|2:Spring06_TestAop01_Test|3:src/com/test01/aopAppcontext.xml|7:beans:8|8:person01:10" bean-file="/Spring06_TestAop01_Test/src/com/test01/aopAppcontext.xml" bean-start-line="10" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/Spring06_TestAop01_Test/src/com/test01/aopAppcontext.xml" source="=Spring06_TestAop01_Test/src=/optional=/true=/=/maven.pomderived=/true=/&lt;com.test01{MyAdvice.java[MyAdvice~afterSaying~QJoinPoint;" source-start-line="22" target="=Spring06_TestAop01_Test/src=/optional=/true=/=/maven.pomderived=/true=/&lt;com.test01{Person.java[Person~sayName~QString;" target-start-line="20"/>
+</aspect-definition>
+<aspect-definition advice-class-name="com.test01.MyAdvice" advice-method-name="afterSaying(org.aspectj.lang.JoinPoint)" advice-type="AFTER" aspect-end-line-number="13" aspect-name="myAspect" aspect-start-line-number="13" factory-id="org.springframework.ide.eclipse.aop.core.annotationAspectDefinitionElementFactory" file="/Spring06_TestAop01_Test/src/com/test01/aopAppcontext.xml" pointcut-expression="execution(public String sayName(..))" proxy-target-class="false">
+<aop-reference advice-type="AFTER" bean="1:BeansModel|2:Spring06_TestAop01_Test|3:src/com/test01/aopAppcontext.xml|7:beans:8|8:person01:10" bean-file="/Spring06_TestAop01_Test/src/com/test01/aopAppcontext.xml" bean-start-line="10" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/Spring06_TestAop01_Test/src/com/test01/aopAppcontext.xml" source="=Spring06_TestAop01_Test/src=/optional=/true=/=/maven.pomderived=/true=/&lt;com.test01{MyAdvice.java[MyAdvice~afterSaying~QJoinPoint;" source-start-line="22" target="=Spring06_TestAop01_Test/src=/optional=/true=/=/maven.pomderived=/true=/&lt;com.test01{Person.java[Person~sayName~QString;" target-start-line="20"/>
+</aspect-definition>
+<aspect-definition advice-class-name="com.test01.MyAdvice" advice-method-name="beforeSaying(org.aspectj.lang.JoinPoint)" advice-type="BEFORE" aspect-end-line-number="13" aspect-name="myAspect" aspect-start-line-number="13" factory-id="org.springframework.ide.eclipse.aop.core.annotationAspectDefinitionElementFactory" file="/Spring06_TestAop01_Test/src/com/test01/aopAppcontext.xml" pointcut-expression="execution(public String sayName(..))" proxy-target-class="false">
+<aop-reference advice-type="BEFORE" bean="1:BeansModel|2:Spring06_TestAop01_Test|3:src/com/test01/aopAppcontext.xml|7:beans:8|8:person01:10" bean-file="/Spring06_TestAop01_Test/src/com/test01/aopAppcontext.xml" bean-start-line="10" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/Spring06_TestAop01_Test/src/com/test01/aopAppcontext.xml" source="=Spring06_TestAop01_Test/src=/optional=/true=/=/maven.pomderived=/true=/&lt;com.test01{MyAdvice.java[MyAdvice~beforeSaying~QJoinPoint;" source-start-line="17" target="=Spring06_TestAop01_Test/src=/optional=/true=/=/maven.pomderived=/true=/&lt;com.test01{Person.java[Person~sayName~QString;" target-start-line="20"/>
+</aspect-definition>
+<aspect-definition advice-class-name="com.test01.MyAdvice" advice-method-name="afterReturnSaying(org.aspectj.lang.JoinPoint)" advice-type="AFTER_RETURNING" aspect-end-line-number="13" aspect-name="myAspect" aspect-start-line-number="13" factory-id="org.springframework.ide.eclipse.aop.core.annotationAspectDefinitionElementFactory" file="/Spring06_TestAop01_Test/src/com/test01/aopAppcontext.xml" pointcut-expression="execution(public String sayName(..))" proxy-target-class="false">
+<aop-reference advice-type="AFTER_RETURNING" bean="1:BeansModel|2:Spring06_TestAop01_Test|3:src/com/test01/aopAppcontext.xml|7:beans:8|8:person01:10" bean-file="/Spring06_TestAop01_Test/src/com/test01/aopAppcontext.xml" bean-start-line="10" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/Spring06_TestAop01_Test/src/com/test01/aopAppcontext.xml" source="=Spring06_TestAop01_Test/src=/optional=/true=/=/maven.pomderived=/true=/&lt;com.test01{MyAdvice.java[MyAdvice~afterReturnSaying~QJoinPoint;" source-start-line="27" target="=Spring06_TestAop01_Test/src=/optional=/true=/=/maven.pomderived=/true=/&lt;com.test01{Person.java[Person~sayName~QString;" target-start-line="20"/>
+</aspect-definition>
+<aspect-definition advice-class-name="com.test01.MyAdvice" advice-method-name="beforeSaying" advice-type="BEFORE" aspect-end-line-number="18" aspect-name="myAspect" aspect-start-line-number="18" factory-id="org.springframework.ide.eclipse.aop.core.beanAspectDefinitionElementFactory" file="/Spring06_TestAop01_Test/src/com/test01/aopAppcontext.xml" pointcut-expression="execution(public * sayName(..))" proxy-target-class="false">
+<aop-reference advice-type="BEFORE" bean="1:BeansModel|2:Spring06_TestAop01_Test|3:src/com/test01/aopAppcontext.xml|7:beans:8|8:person01:10" bean-file="/Spring06_TestAop01_Test/src/com/test01/aopAppcontext.xml" bean-start-line="10" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/Spring06_TestAop01_Test/src/com/test01/aopAppcontext.xml" source="=Spring06_TestAop01_Test/src=/optional=/true=/=/maven.pomderived=/true=/&lt;com.test01{MyAdvice.java[MyAdvice~beforeSaying~QJoinPoint;" source-start-line="17" target="=Spring06_TestAop01_Test/src=/optional=/true=/=/maven.pomderived=/true=/&lt;com.test01{Person.java[Person~sayName~QString;" target-start-line="20"/>
+</aspect-definition>
+</aop-project>
+<aop-project name="Spring04"/>
+<aop-project name="SpringMVC01"/>
+<aop-project name="StartBoot04"/>
+<aop-project name="SpringMVC05_update_jdbc_javaconfig"/>
+<aop-project name="Spring03"/>
+<aop-project name="SpringMVC02"/>
+<aop-project name="SpringMVC03_filter"/>
+<aop-project name="SpringMVC05_update_jdbc_end"/>
+<aop-project name="StartBoot01"/>
+<aop-project name="SpringMVC03_filter_aop"/>
+<aop-project name="SpringMVC03"/>
+<aop-project name="StartBoot02"/>
+<aop-project name="SpringMVC03_filter_aop2"/>
+<aop-project name="Semi_Project"/>
+<aop-project name="SpringMVC03_filter_login"/>
+<aop-project name="SpringMVC03_filter_aop_login_interceptor_transaction"/>
+<aop-project name="SpringMVC04_file"/>
+<aop-project name="Spring02_Bean"/>
+</aop-reference-model>

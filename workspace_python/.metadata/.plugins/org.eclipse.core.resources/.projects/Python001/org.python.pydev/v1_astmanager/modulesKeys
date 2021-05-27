@@ -1,0 +1,7 @@
+MODULES_MANAGER_V3
+com.__init__|/Users/seunghyunson/workspaces/workspace_python/Python001/com|^
+com.test01.__init__|/Users/seunghyunson/workspaces/workspace_python/Python001/com/test01|^
+com.test01.coffee_machine|/Users/seunghyunson/workspaces/workspace_python/Python001/com/test01/coffee_machine.py
+com.test01.control01_if|/Users/seunghyunson/workspaces/workspace_python/Python001/com/test01/control01_if.py
+com.test01.control02_for|/Users/seunghyunson/workspaces/workspace_python/Python001/com/test01/control02_for.py
+com.test01.format|/Users/seunghyunson/workspaces/workspace_python/Python001/com/test01/format.py

@@ -1,0 +1,13 @@
+package com.Test02;
+
+public class Sugar extends Product {
+
+	private String type;
+	private int weight;
+	
+	@Override
+	public void makeProduct() {
+		
+	}
+
+}

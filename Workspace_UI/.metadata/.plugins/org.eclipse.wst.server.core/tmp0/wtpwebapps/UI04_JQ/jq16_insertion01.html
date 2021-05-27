@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<style type="text/css">
+
+	div{
+		border: 1px solid red;
+	}
+	.prepend{
+		border: 1px dotted green;
+	}
+	.append{
+		border: 1px dotted blue;
+	}
+	
+	
+</style>
+
+<script type="text/javascript" src="resources/js/jquery-3.5.1.min.js"></script>
+
+<script type="text/javascript">
+
+	$(function(){
+		var cnt = 0;
+		// $("selector").prepend : selector의 자식요소 맨 앞에 
+		$("button:eq(0)").click(function(){
+			// $("<p>") : createElement("p"); -> p tag를 만들어 준다.
+			$("div").prepend($("<p>").addClass("prepend").text("prepend"+(cnt++)));
+		});
+		// $("seletor").append : selector의 자식요소 맨 뒤에
+		$("button:eq(1)").click(function(){
+			$("div").append($("<p>").addClass("append").text("append"+(cnt++)));	
+		});
+		
+		// innerHTML -> html안에 태그가 생긴다.
+		$("button:eq(2)").click(function(){
+			$("div").html("<b>html 요소를 바꾼다.</b>");
+		});
+		
+		// textContent -> text는 문자열로 출력됨. "<b>text 요소를 바꾼다.</b>"과 같이 자체가 문자열이다. 
+		$("button:eq(3)").click(function(){
+			$("div").text("<b>text 요소를 바꾼다.</b>");
+		});
+		
+	});
+// 동적, 정적의 차이
+// jsp는 동적, html은 정적. 근데 개발자 도구가 바뀐다? js로 이벤트를 걸어줘서 개발자 도구에서 바뀌는 것처럼 보이는 것이다. 
+</script>
+
+</head>
+<body>
+	
+	<button>prepend</button>
+	<button>append</button>
+	<button>html</button>
+	<button>text</button>
+	
+	<div>
+		<p>내부 삽입 1</p>
+		<p>내부 삽입 2</p>
+	</div>
+	
+</body>
+</html>

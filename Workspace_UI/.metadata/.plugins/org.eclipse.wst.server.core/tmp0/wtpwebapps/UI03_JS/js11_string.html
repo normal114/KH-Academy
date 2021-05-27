@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script type="text/javascript">
+
+	function strTest01(){
+		var str01 = "kh정보교육원";
+		var str02 = "QClass";
+		
+		// +연산자
+		var str03 = str01 + str02;
+		alert("str01 + str02 = " + str03);
+		
+		// concat()
+		var newString = str01.concat(str02, "대박", "짱이야");
+		alert(newString);
+		
+		// join()
+		var joinTest = ["5", "10", "15", "20"].join("+"); 
+		// 요소 사이사이에 +를 넣어서 string 값을 합쳐준다. 
+		// 5+10+15+20을 더해서 *****문자열이 만들어진다.
+		alert(joinTest);
+		alert(eval(joinTest));
+		
+	}
+	
+	function strTest02(){
+		var num = 12.5;
+		var bool = true;
+		var result = "string" + num + 1 + bool; // + 1을 했는데 13.5가 되지 않은 이유는 1이 문자열이기 때문이다. 
+		// 만약 num + 1 + "string"이라면 13.5가 되었을 것이다. "string"이 앞에 있으면 12.5, "string"이 뒤에 있으면 13.5이다. 자바랑 같다.
+		alert(result + " : " + typeof(result));
+	}
+	
+	function strTest03(){
+		var str = prompt("이름을 입력하세요");
+		var span = document.getElementById("res");
+		
+		// == : 동등연산자. '같다'는 의미이다
+		if (str == "qclass"){
+			span.textContent = str + "님, 환영합니다.";
+		} else if (str == "큐클래스"){
+			span.textContent = str + "님, 환영합니다."; // 브라우저에 qclass나 큐클래스를 써야 한다. 다른 이름을 쓰면 이름을 확인해 주세요.가 출력된다.
+		} else {
+			span.textContent = "이름을 확인해 주세요.";
+		}
+	
+		// 자동 형 변환
+		var num = 10; // 문자 10이다. // 만역 여기를 문자열 10(var num = "10";)으로 바꾼다면 엄격한 비교에서는 num === 10이 출력될 것이다.
+		if (num == "10") { // 브라우저에서 이름을 아무거나 입력하면 num == 10이 출력된다.
+			alert("num == 10"); // num은 numbertype인데 "10"이랑 true가 뜬다. 왜냐하면 자바 스크립트는 자동으로 형변환(타입변환)을 해주기 때문이다. front end 개발자면 진짜 중요한 기능이다.
+		} else {
+			alert("num != 10");
+		}
+		
+		// === : 엄격한 비교
+		if (num === "10") {
+			alert("num === 10");
+		} else {
+			alert("num !== 10");
+		
+		}
+			
+		var strVal = "화가난다";
+		var strObj = new String("화가난다");
+			
+		if (strVal == strObj) {
+			alert("같다.");
+		} else {
+			alert("다르다.");
+			
+		}
+		
+		if (strVal === strObj) {
+			alert(strVal + " : " + typeof(strVal) + "\n" + strObj + " : " + typeof(strObj) + "\n같다");
+		} else {
+			alert(strVal + " : " + typeof(strVal) + "\n" + strObj + " : " + typeof(strObj) + "\n다르다");
+		}
+	}
+	
+	function strTest04(){
+		var str = "홍길동 이순신 유재석 강호동 홍길동 김선달";
+		
+		
+		// indexOf : 왼쪽 -> 오른쪽 검색
+		// lastIndexOf : 오른쪽 -> 왼쪽 검색
+		// 만일, 검색하는 단어가 없으면 -1 반환
+		var prop = prompt("검색할 이름을 작성해 주세요");
+		alert("indexof : " + str.indexOf(prop));
+		alert("lastIndexOf : " + str.lastIndexOf(prop)); 
+		// last index는 뒤에서 부터 앞으로 검색을 하지만 검색된 문자열의 가장 앞 index의 값을 출력해준다.
+		// 홍길동을 검색할 경우 홍길동이 중복 되기 때문에 last index는 뒤의 홍길동을 검색하고 뒤의 홍길동의 홍 index의 값을 가져온다. 
+	}
+	
+	function strTest05(){
+		var strVal = "문자열 추출하기. 관련 메소드:indexOf,substring.";
+		var start = strVal.indexOf(":"); // +1이 되어있기 때문에 :의 다음 글자부터 문자열이 나온다. 그러므로 indexOf가 출력된다.
+		var end = strVal.lastIndexOf(".");
+		var res = strVal.substring(start+1, end); // 배열과 index는 -1 차이가 나기 때문에 end는 g 부분이다.
+		alert(res);
+		
+		// indexOf,substring
+		var splitVal = res.split(",");
+		alert(splitVal[0]);
+		alert(splitVal[1]);
+		
+	}
+	
+	function strTest06(){
+		var prop = prompt("쉼표로 구분하여 키워드를 입력하세요", "예)사과,바나나,키위,수박");
+		
+		var propArr = prop.split(",");
+		var propRes ="";
+		
+		for (var i = 0; i < propArr.length; i++){
+			propRes += propArr[i] + "<br/>";
+		}
+		
+		document.getElementById("key").innerHTML = propRes;	
+	}
+	
+	
+
+</script>
+
+		
+</head>
+<body>
+
+	<p>문자열 합치기
+		<button onclick="strTest01();">클릭</button>
+	</p>
+	
+	<p>다른 자료형 합치기
+		<button onclick="strTest02();">클릭</button>
+	</p>
+	
+	<p>문자열 비교하기 
+		<button onclick="strTest03();">클릭</button>
+		<span id="res"></span>
+	</p>
+
+	<p>문자열 검색하기	
+		<button onclick="strTest04();">클릭</button>
+	</p>
+	
+	<p>문자열 추출하기
+		<button onclick="strTest05();">클릭</button>
+	</p>
+	
+	<p>키워드 나누기
+		<button onclick="strTest06();">클릭</button>
+	</p>
+	<div id="key"></div>
+		
+		
+</body>
+</html>

@@ -1,0 +1,5 @@
+package com.mvc.semi.model.BoardDao;
+
+public interface BoardDao {
+
+}

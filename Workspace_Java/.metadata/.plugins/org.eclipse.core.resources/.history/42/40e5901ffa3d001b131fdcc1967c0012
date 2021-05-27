@@ -1,0 +1,32 @@
+package Test;
+
+public class Test01 {
+
+	public static int getSum(int kor, int eng, int math) {
+		
+		int res = kor + eng + math;
+		
+		return res;
+		
+	}
+	
+	public static double getAvg(int sum) {
+		return (double) sum / 3;
+	}
+
+	public static void main(String[] args) {
+		int kor, eng, math;
+		kor = eng = math = 0;
+		
+		kor = 100;
+		eng = 39;
+		math = 78;
+		
+		int sum = 0;
+		int avg = 0;
+		
+		sum = getSum(kor, eng, math);
+	}
+	
+	
+}

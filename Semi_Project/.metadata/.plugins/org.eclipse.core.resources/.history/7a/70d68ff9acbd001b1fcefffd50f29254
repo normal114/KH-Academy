@@ -1,0 +1,5 @@
+package com.mvc.semi.model.BoardBiz;
+
+public interface BoardBiz {
+
+}

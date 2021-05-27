@@ -1,0 +1,12 @@
+package Test;
+
+public class MethodTest01 {
+	
+	public static void main(String[] args) {
+		
+		MethodTest01.publicMethod();
+		MethodTest01.protectedMethod();
+		
+	}
+	
+	}

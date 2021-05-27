@@ -1,0 +1,20 @@
+-- VERSION_5
+-- START DISKCACHE_3
+/Users/seunghyunson/workspaces/workspace_python/.metadata/.plugins/org.eclipse.core.resources/.projects/Python04/com.python.pydev.analysis/v2_indexcache
+application|1620875946234557898|/Users/seunghyunson/workspaces/workspace_python/Python04/application.py
+-- END DISKCACHE
+-- START DICTIONARY
+2
+2=application
+1=/Users/seunghyunson/workspaces/workspace_python/Python04/application.py
+-- END DICTIONARY
+-- START TREE 1
+4
+app|1|app!1^6#1*19@
+hel|1|hello!1^20#5*18@
+roo|1|root!1^11#5*18@
+tes|1|test!1^25#5*18@
+-- END TREE
+-- START TREE 2
+0
+-- END TREE

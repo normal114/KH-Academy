@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<style type="text/css">
+	div{border: 1px solid red;}
+</style>
+
+<script type="text/javascript" src="resources/js/jquery-3.5.1.min.js"></script>
+
+<script type="text/javascript">
+
+	$(function(){
+		$("button:eq(0)").click(function(){
+			$("#base").after("<div>새로운 엘리먼트(after)</div>"); // 내가 선택한 얘 다음에다가 지정된 명령을 추가한다.
+							// html명령문이다.
+		});
+		$("button:eq(1)").click(function(){
+			$("<div>새로운 엘리먼트(insertAfter)</div>").insertAfter("#base"); // target이 뒤에 있다.
+			// 여기는 function이 못들어간다. 타겟(#base)이 먼저 들어와야만 function이 들어갈 수 있다.
+		});
+		
+		$("button:eq(2)").click(function(){
+			$("#base").before("<div>새로운 엘리먼트(before)</div>"); // 
+		});
+		$("button:eq(3)").click(function(){
+			$("<div>새로운 엘리먼트(insertBefore)<div>").insertBefore("#base");
+			
+		});
+	});
+	// target이 자기랑 같은 형제 요소로 만들어진다.
+
+</script>
+
+</head>
+<body>
+
+	<button>after()</button>
+	<button>insertAfter()</button>
+	<button>before()</button>
+	<button>insertBefore()</button>
+	
+	<div id="base">
+		<p>외부 삽입 메서드</p>
+	</div>
+	
+</body>
+</html>

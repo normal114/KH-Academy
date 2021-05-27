@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;MVCBoardDaoImpl.java&apos; to &apos;Jsp003_MVC_Servlet/src/com.mvc.dao&apos;&#x0A;- Original project: &apos;Jsp03_MVC_Servlet&apos;&#x0A;- Destination element: &apos;Jsp003_MVC_Servlet/src/com.mvc.dao&apos;&#x0A;- Original element: &apos;com.mvc.dao.MVCBoardDaoImpl.java&apos;" description="Copy compilation unit" destination="=Jsp003_MVC_Servlet/src&lt;com.mvc.dao" element1="/src&lt;com.mvc.dao{MVCBoardDaoImpl.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1614595275713" units="1" version="1.0"/>
+</session>

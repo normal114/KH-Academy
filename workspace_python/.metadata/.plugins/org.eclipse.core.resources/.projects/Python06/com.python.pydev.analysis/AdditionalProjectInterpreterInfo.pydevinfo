@@ -1,0 +1,41 @@
+-- VERSION_5
+-- START DISKCACHE_3
+/Users/seunghyunson/workspaces/workspace_python/.metadata/.plugins/org.eclipse.core.resources/.projects/Python06/com.python.pydev.analysis/v2_indexcache
+test.pymongo05_aggre|1621222894791698032|/Users/seunghyunson/workspaces/workspace_python/Python06/test/pymongo05_aggre.py
+test.pymongo04_delete|1621222692938053126|/Users/seunghyunson/workspaces/workspace_python/Python06/test/pymongo04_delete.py
+test.__init__|1621218197209840436|/Users/seunghyunson/workspaces/workspace_python/Python06/test/__init__.py
+test.pymongo03_update|1621229283082485770|/Users/seunghyunson/workspaces/workspace_python/Python06/test/pymongo03_update.py
+test.pymongo02_insert|1621221350646093932|/Users/seunghyunson/workspaces/workspace_python/Python06/test/pymongo02_insert.py
+test.hello|1621219302920590218|/Users/seunghyunson/workspaces/workspace_python/Python06/test/hello.py
+test.pymongo01_find|1621220720691223133|/Users/seunghyunson/workspaces/workspace_python/Python06/test/pymongo01_find.py
+-- END DISKCACHE
+-- START DICTIONARY
+12
+3=/Users/seunghyunson/workspaces/workspace_python/Python06/test/hello.py
+2=test.pymongo05_aggre
+7=/Users/seunghyunson/workspaces/workspace_python/Python06/test/pymongo04_delete.py
+8=test.pymongo04_delete
+5=/Users/seunghyunson/workspaces/workspace_python/Python06/test/pymongo02_insert.py
+11=/Users/seunghyunson/workspaces/workspace_python/Python06/test/pymongo03_update.py
+1=/Users/seunghyunson/workspaces/workspace_python/Python06/test/pymongo05_aggre.py
+12=test.pymongo03_update
+9=/Users/seunghyunson/workspaces/workspace_python/Python06/test/pymongo01_find.py
+6=test.pymongo02_insert
+4=test.hello
+10=test.pymongo01_find
+-- END DICTIONARY
+-- START TREE 1
+9
+agg|1|aggre!1^13#1*19@
+cli|6|client!3^6#1*35@client!1^6#1*19@client!5^6#1*51@client!7^6#1*67@client!9^6#1*83@client!11^6#1*99@
+col|1|collection!3^12#1*35@
+cur|1|cursor!9^10#1*83@
+db|6|db!7^7#1*67@db!11^7#1*99@db!5^7#1*51@db!1^7#1*19@db!3^9#1*35@db!9^7#1*83@
+kor|1|kors!9^33#1*83@
+lee|2|leess!9^24#1*83@lee!9^18#1*83@
+res|7|res01!11^15#1*99@res01!7^10#1*67@res02!5^36#1*51@result!3^15#1*35@res02!11^26#1*99@res01!5^32#1*51@res02!7^14#1*67@
+sco|5|score!5^8#1*51@score!1^8#1*19@score!11^8#1*99@score!7^8#1*67@score!9^8#1*83@
+-- END TREE
+-- START TREE 2
+0
+-- END TREE

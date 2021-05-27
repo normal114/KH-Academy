@@ -1,0 +1,12 @@
+package Test;
+
+import java.util.Arrays;
+
+public class Test02 
+
+	public static void main(String[] args) {
+	Score[] kh = new Score[3];
+	kh[0] = new Score("박찬종", 90, 89, 100);
+	kh[1] = new Score()
+	}
+}

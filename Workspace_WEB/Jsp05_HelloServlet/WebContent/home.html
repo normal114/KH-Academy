@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<h1>HOME</h1> 
+	<!-- web.xml은 프로젝트의 가장 기본적인 설정을 넣어줄 수 있다. -->
+	<!-- 원래 index.html이 기본이었는데 지금은 home.html이 기본이 되었다. -->
+	<!-- 왜냐하면 web.xml에서 home으로 변경하였기 때문이다. -->
+	<a href="hello.do?cammand=get">hello</a>
+	<br/>
+	<form action="controller.do" method="post">
+		<input type="hidden" name="command" value="post" />
+		<input type="submit" value="hello" />
+	</form>
+	
+	
+	<!-- 우리는 get방식으로 요청한다. post로 보내는 방법은 form태그를 사용하는 방법 밖에 없다. -->
+
+
+
+
+</body>
+</html>

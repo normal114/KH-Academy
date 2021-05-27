@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 0 elements to &apos;Java200_reminder/src/com.j02&apos;&#x0A;- Destination element: &apos;Java200_reminder/src/com.j02&apos;" description="Copy compilation units" destination="=Java200_reminder/src&lt;com.j02" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1612492719521" units="0" version="1.0"/>
+</session>

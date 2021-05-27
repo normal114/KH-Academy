@@ -1,0 +1,32 @@
+-- VERSION_5
+-- START DISKCACHE_3
+/Users/seunghyunson/workspaces/workspace_python/.metadata/.plugins/org.eclipse.core.resources/.projects/Python001/com.python.pydev.analysis/v2_indexcache
+com.test01.control02_for|1620736624327637740|/Users/seunghyunson/workspaces/workspace_python/Python001/com/test01/control02_for.py
+com.test01.coffee_machine|1620738508395870572|/Users/seunghyunson/workspaces/workspace_python/Python001/com/test01/coffee_machine.py
+com.test01.control01_if|1620735871853063143|/Users/seunghyunson/workspaces/workspace_python/Python001/com/test01/control01_if.py
+com.test01.format|1620779694768579752|/Users/seunghyunson/workspaces/workspace_python/Python001/com/test01/format.py
+-- END DISKCACHE
+-- START DICTIONARY
+8
+8=com.test01.control02_for
+1=/Users/seunghyunson/workspaces/workspace_python/Python001/com/test01/control01_if.py
+4=com.test01.coffee_machine
+3=/Users/seunghyunson/workspaces/workspace_python/Python001/com/test01/coffee_machine.py
+2=com.test01.control01_if
+6=com.test01.format
+5=/Users/seunghyunson/workspaces/workspace_python/Python001/com/test01/format.py
+7=/Users/seunghyunson/workspaces/workspace_python/Python001/com/test01/control02_for.py
+-- END DICTIONARY
+-- START TREE 1
+7
+a|1|a!1^1#1*19@
+b|1|b!1^11#1*19@
+cof|1|coffee!3^6#5*34@
+dep|1|dept!5^2#1*51@
+nam|1|name!5^1#1*51@
+sta|1|start!3^1#5*34@
+sub|1|subject!7^1#1*67@
+-- END TREE
+-- START TREE 2
+0
+-- END TREE

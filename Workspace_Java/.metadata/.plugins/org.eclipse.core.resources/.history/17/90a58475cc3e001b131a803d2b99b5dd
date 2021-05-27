@@ -1,0 +1,11 @@
+package Test;
+
+public class Test01 {
+	
+	private String color;
+	private int speed;
+	
+	public Test01 () {
+		
+	}
+}

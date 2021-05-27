@@ -1,0 +1,9 @@
+package com.cal01;
+
+public class DayOfClendar {
+
+	public static void main(String[] args) {
+
+		if(args.lengtj !=2) {
+			System.err.println("Usage : java Ex10_5 2019 9");
+		}

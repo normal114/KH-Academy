@@ -1,0 +1,27 @@
+package com.Test02;
+
+public class Sugar extends Product {
+
+	private String type;
+	private int weight;
+	
+	public Sugar() {
+		
+	}
+	public Suger(int productCode, String productName, String type, int weight) {
+		super(productCode, productName);
+		this.type = type;
+		this.weight = weight;
+	}
+	
+	puvl
+	
+	
+	@
+	
+	@Override
+	public void makeProduct() {
+	System.out.println(super.toString() + ", 제품유형 : " + type + ", 중량 : " + weight + "kg 설탕을 생산하였습니다.");	
+	}
+
+}

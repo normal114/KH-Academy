@@ -1,0 +1,18 @@
+package Test;
+
+public class Test01 {
+	
+	public static void main(String[] args) {
+		
+		byte b01 = 126;
+		System.out.println(b01);
+		b01 = 111;
+		System.out.println(b01);
+		
+		byte b02 = (byte)128;
+		System.out.println(b02);
+		
+		byte sumB = (byte) (b01 + b02);
+		System.out.println(sumB);
+	}
+}

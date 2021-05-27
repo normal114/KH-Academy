@@ -1,0 +1,24 @@
+package Test;
+
+public class Test01 {
+	
+	public static void main(String[] args) {
+		
+		float f1 = 0.1f;
+		float f2 = 9.9f;
+		System.out.println(f1);
+		System.out.println(f2);
+		float sumF = f1 + f2;
+		System.out.println("sumF = "+ (f1 + f2));
+		System.out.println("------------------");
+		
+		double d1 = 100.04;
+		double d2 = 9.06d;
+		double sumD = d1 + d2;
+		System.out.println(sumD);
+		sumb = Math.around(sumD);
+		
+	
+	
+	}
+}

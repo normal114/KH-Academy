@@ -1,0 +1,36 @@
+package com.test03;
+
+import java.util.Arrays;
+
+import com.compare.Score;
+
+public class MTest02 {
+
+	public static void main(String[] args) {
+		// Score 객체 3개 만들자.
+		// 이름은 홍길동, 이순신, 김선달. 점수는 알아서.
+		Score s1 = new Score();
+		s1.setName("홍길동");	
+		s1.setKor(100);
+		s1.setEng(56);
+		s1.setMath(70);
+		
+		Socre s2 = new Score("이순신", 57, 81, 100);
+		// Score 객체를 관리할 수 있는 Set 객체를 만들자.
+		// Set type에, HashSet으로 만들자.
+		
+		kh[0] = new Score("박찬종", 90, 89, 100);
+		kh[1] = new Score("이순신", 55, 100, 68);
+		kh[2] = new Score("홍길동", 100, 40, 80);
+
+		for (Score student : kh) {
+			System.out.println(student);
+		}
+		// sort는 크기대로 정렬해줌.
+		Arrays.sort(kh); // java.lang.CalssCastException 형변환 에러. 타입이 다른 경우
+		System.out.println("----------------------------");
+		for (Score student : kh) {
+			System.out.println(student);
+		}
+	}
+}

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="favoriteFood" name="favoirteFood" class="com.test02.Food">
+		<property name="name" value="육회" />
+		<property name="price" value="30000" />
+	</bean>
+	
+	<bean id="unFavoriteFood" name="unFavoriteFood" class="com.test02.Food">
+		<constructor-arg value="해물찜"/>
+		<constructor-arg value="40000" />
+	
+	</bean>
+	<bean id="myFood" class="com.test02.MyFood" autowire="default"></bean> <!-- 둘 다 null -->
+	
+	<!-- 
+	<bean id="myFood" class="com.test02.MyFood" autowire="byType"></bean>
+	에러가 뜬다 -->
+	
+	<!--  
+	<bean id="myFood" class="com.test02.MyFood" autowire="byName"></bean>
+	출력이 잘 된다. -->
+	
+	<!-- 
+	<bean id="myFood" class="com.test02.MyFood" autowire="constructor"></bean>
+	-->
+	
+	<!-- 
+		autowire
+		1. byName : setter와 같은 이름의 bean (id/name) 이 있으면 자동 할당
+		2. byType : setter의 parameterType과 같은 type의 bean이 있으면 자동 할당
+		3. constructor : 생성자와 같은 이름의 bean이 있으면 자동 할당
+		4. default : 생성자에 할당할 수 있는지 확인 후 -> 없으면 setter에서 확인하여 할당
+					 기본 생성자가 있으면 기본 생성자 호출!
+	 -->
+	
+	
+	<!-- bean id="myFood" class="com.test02.MyFood" 
+		<constructor-arg ref="favoriteFood" />
+		<constructor-arg ref="unFavoriteFood" />
+	-->
+	
+</beans>

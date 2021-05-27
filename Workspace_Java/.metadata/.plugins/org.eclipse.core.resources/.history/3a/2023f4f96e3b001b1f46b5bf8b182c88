@@ -1,0 +1,65 @@
+package com.test03;
+
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Set;
+
+import com.score.Score;
+
+public class MTest02 {
+
+	public static void main(String[] args) {
+		// Score 객체 3개 만들자.
+		// 이름은 홍길동, 이순신, 김선달. 점수는 알아서.
+		Score s1 = new Score();
+		s1.setName("홍길동");	
+		s1.setKor(100);
+		s1.setEng(56);
+		s1.setMath(70);
+		
+		Score s2 = new Score("이순신", 57, 81, 100);
+		
+		Score s3 = new Score("김선달", 79, 100, 50);
+		// Score 객체를 관리할 수 있는 Set 객체를 만들자.
+		// Set type에, HashSet으로 만들자.
+		Set<Score> set = new HashSet<Score>();
+		set.add(s1);
+		set.add(s2);
+		set.add(s3);
+		set.add(new Score("샤넬", 100, 100, 100));
+		
+		printCollection(set);
+		transElement(set);
+	}
+	
+	public static void printCollection(Set<Score> set) {
+		// 1. 
+		for (Score sc : set) {
+			System.out.println(sc);
+		}
+		
+		System.out.println("---------------");
+	
+		// 2. 
+		Object[] oArr = set.toArray();
+		for (int i = 0; i < oArr.length; i++ ) {
+			// System.out.println(oArr[i]);
+			// System.out.println(oArr[i].getName()); // Object type으로 감싸져 있다. 따라서 score가 가지고 있는 getName을 사용할 수 없다. 
+			System.out.println(((Score)oArr[i]).getName() + " \t " + String.format("%.2f", ((Score)oArr[i]).getAvg());
+			// 따라서 (Score) 같이 자식으로 바꿔야 getName사용이 가능하다.
+			// System.out.printf("%s \t %.2f\n", ((Score)oArr[i]).getName(), ((Score)oArr[i]).getAvg());
+		}
+
+	
+		// 3. Iterator : 컬렉션 저장 요소를 읽어오는 표준화된 방법
+		Iterator<Score> iterator = set.iterator();  // set.Score의 내용을 가져온다.
+		while (iterator.hasNext()) { //다음에 내용이 있니 물어보면서 하나씩 가져온다.
+			System.out.println(iterator.next()); // 내용을 가져오면서 다시 다음으로 넘어가서 가져온다.
+		}
+		
+	}
+
+}
+	
+

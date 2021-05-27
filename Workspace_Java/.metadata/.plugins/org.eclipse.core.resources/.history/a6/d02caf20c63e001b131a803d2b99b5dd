@@ -1,0 +1,19 @@
+package Test;
+
+import Test.Test01;
+
+public class Test03 {
+	
+	public static void main(String[] args) {
+		Test01 myA = new Test01();
+		myA.prn();
+		Test01 paramA = new Test01(10);
+		paramA.prn();
+		System.out.println("abc : " + paramA.getAbc());
+		paramA.setAbc(100);
+		System.out.println("abc : " + paramA.getAbc());
+		System.out.println("========================================");
+		
+		
+	}
+}

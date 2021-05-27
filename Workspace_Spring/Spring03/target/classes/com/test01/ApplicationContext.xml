@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="singleton" class="com.test01.AbstractTest" factory-method="getInstance"></bean>
+	<!-- AbstractTest singleton = AbstractTest.getInstance(); -->
+	<!-- getInstance가 없으면 호출을 못한다. 생성자가 없기 때문에. getInstance를 통해 return으로 값을 전달받는다. -->
+</beans>

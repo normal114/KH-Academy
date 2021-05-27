@@ -1,0 +1,47 @@
+package Test;
+
+public class Test01 {
+	
+	private String color;
+	private int speed;
+	
+	public Test01 () {
+	
+	}
+	
+	public Test01(String color) {
+		this.color = color ;
+		
+	}
+	public Test01(String color, int speed) {
+		this.color = color;
+		this.speed = speed;
+	}
+
+	public String getColor() {
+		return color;
+	}
+	
+	public void setColor(String color) {
+		this.color = color;
+	}
+	
+	public int getSpeed() {
+		return speed;
+	}
+	
+	public void setSpeed(int speed) {
+		this.speed = speed;
+	}
+
+
+
+
+
+
+
+
+
+
+
+}

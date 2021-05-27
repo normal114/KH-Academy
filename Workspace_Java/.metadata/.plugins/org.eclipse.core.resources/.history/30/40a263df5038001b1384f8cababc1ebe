@@ -1,0 +1,14 @@
+package com.cal02;
+
+import java.util.Scanner;
+
+public class MTest {
+
+	private static boolean isLeapYear(int year) {
+		boolean = false;
+		
+		if ((year % 4 == 0) && (year % 100 != 0) || (year % 400 == 0)) {
+			leap = true;
+		}
+		return leapl
+	}

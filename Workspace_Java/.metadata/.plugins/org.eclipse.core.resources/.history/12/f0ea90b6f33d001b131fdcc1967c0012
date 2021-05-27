@@ -1,0 +1,10 @@
+package Test;
+
+public class Test01 {
+
+	public static void main(String[] args) {
+
+		int i = 100;
+		
+		System.out.println("1. i: \\" + i + "\n");
+		

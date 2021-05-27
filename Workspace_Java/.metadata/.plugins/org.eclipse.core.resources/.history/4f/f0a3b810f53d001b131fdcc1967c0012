@@ -1,0 +1,22 @@
+package Test;
+
+public class MethodTest01 {
+	
+	public static void main(String[] args) {
+		
+		MethodTest01.publicMethod();
+		MethodTest01.protectedMethod();
+		defaultMethod();
+		privateMethod();
+		
+	}
+	
+	public static void publicMethod() {
+		System.out.println("public Method 호출!");
+	}
+	
+	public static void protectedMethod() {
+		System.out.println("protected Method 호출!");
+	}
+	
+	

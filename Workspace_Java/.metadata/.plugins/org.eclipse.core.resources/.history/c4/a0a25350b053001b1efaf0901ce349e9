@@ -1,0 +1,21 @@
+package Examples;
+/**
+ * PrimeExam.java
+ * 소수 여부 확인하
+ * 
+ * 소수(prime)란 1보다 크며, 1과 그 수 자체 이외의 다른 수로는 똑 떨어지게 나눌 수 없는 수이다.
+ */
+
+public class PrimeExam {
+
+	public static void main(String[] args) {
+		
+		for (int i = 2; i <= 20; i++) {
+			printPrime(i, isPrime(i));
+		}
+		
+		System.out.println();
+		
+		}
+	}
+}

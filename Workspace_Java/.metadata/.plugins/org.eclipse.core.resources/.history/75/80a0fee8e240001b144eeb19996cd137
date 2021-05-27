@@ -1,0 +1,8 @@
+package com.Test02;
+
+public class KHFactory {
+
+	public static void main(String[] args) {
+		Product[] kh = new Product[5];
+	}
+}

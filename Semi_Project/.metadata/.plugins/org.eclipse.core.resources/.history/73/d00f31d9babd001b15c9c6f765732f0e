@@ -1,0 +1,25 @@
+package com.mvc.semi.model.Controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+
+import com.mvc.semi.model.BoardBiz.BoardBiz;
+
+@Controller
+public class BoardController {
+
+	@Autowired
+	private BoardBiz biz;
+	
+	@RequestMapping("/list.do") {
+		public String selectList(Model model) {
+		
+		model.addAttribute("list", biz.accompany_selectList());
+		model.addAttribute("list", biz.notice_selectList());
+		model.addAttribute("list", biz.photo_selectList());
+		
+		int 
+
+		}
+	}

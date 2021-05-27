@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<style type="text/css">
+
+	#circle {
+		border: 1px solid red;
+		display: none;
+		/* 원래 <div>id=circle이 있어야 하는데 display: noned이라서 안 보인다. */
+	}	
+
+</style>
+
+<script type="text/javascript">
+
+	function randomNum(){
+		var rnum = Math.floor(Math.random()*10 + 1); // Math.floor은 소수점 버림 기능이다.
+		// Math.random은 0 =< Math.ramdom() < 1이다. 소수점도 포함이기 떄문에 Math.floor을 걸어서 소수점을 버린다. 
+		document.getElementById("rnum").value = rnum;
+		
+	}
+
+	function randomBg(){
+		// style 색상표현 : rgb(0-255(빨간색), 0-255(초록색), 0-255(파란색)
+		
+		var rnum = function(){
+			return Math.floor(Math.random()*256);
+		}
+		
+		document.body.style.backgroundColor="rgb(" + rnum() + ", " + rnum() + ", " + rnum() + ")";	
+	}
+	
+	function circleView(){
+		var rnum = Math.floor(Math.random() * 200);
+		var circle = document.getElementById("circle");
+		circle.style.width = rnum + "px";
+		circle.style.height = rnum + "px";
+		
+		circle.style.borderRadius = Math.floor(rnum/2) + "px";
+		// 동그라미가 만들어진다.
+		circle.style.display = "block";
+		// 동그라미가 생긴다.
+	}
+		
+</script>
+
+</head>
+<body>
+
+	<h1>랜덤 숫자 생성하기</h1>
+	
+	<label>숫자 : </label>
+	<input type="text" id="rnum" readonly="readonly" />
+	<input type="button" value="난수발생" onclick="randomNum();" />
+	
+	<h1>랜덤으로 배경색 설정하기</h1>
+	<input type="button" value="배경색 변경" onclick="randomBg();" />
+	
+	<h1>원 만들기</h1>
+	<input type="button" value="원 만들기" onclick="circleView();" /><br/>
+	<br/><br/><br/><br/><br/>
+	<div id="circle"></div>
+	
+	<h1>원의 넓이, 둘레 구하기</h1>
+	<input type="button" value="원 계산" onclick="circleArea();" />
+	
+	원의 넓이 : 
+	<span id="area"></span>
+	원의 둘레 :
+	<span id="len"></span>
+	원의 지름 :
+	<span id="r2"></span>
+	
+	<!-- 넓이 : 파이 * r 제곱 / 둘레 : 2 * 파이 * r -->	
+<script type="text/javascript">
+
+	function circleArea(){
+		var circleWidth = document.getElementById("circle").style.width;
+		
+		// 지름
+		var r2 = parseInt(circleWidth);
+		console.log(r2); // 원을 만들어 놓고 console창을 확인하자.
+		
+		// 반지름
+		var r = Math.floor(r2/2);
+		
+		var area = Math.PI * (Math.pow(r, 2));
+		var len = Math.PI * r * 2;
+		
+		// console창에서도 출력된다.
+		console.log("넓이 : " + area);
+		console.log("둘레 : " + len);
+		
+		// 지름 
+		alert(r2);
+		
+		document.getElementById("area").innerHTML = Math.round(area);
+		document.getElementById("len").innerHTML = Math.round(len);
+		
+		document.getElementById("r2").innerHTML = r2;
+	}
+
+</script>
+	
+</body>
+</html>

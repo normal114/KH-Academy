@@ -1,0 +1,24 @@
+package com.cal02;
+
+// 달력 만들기
+// java.util.Calendar 사용해서 만들기
+import java.util.Calendar;
+
+public class CalendarUseApi {
+
+	public void prn(int year, int month) {
+		
+		// Calendar 객체 생성
+		// Calendar cal = new Calendar(); X -> singleton
+		Calendar cal = Calendar.getInstance();
+		
+		// 달력 윗부분
+		System.out.printf("\t\t%d년 %d월", year, month);
+		System.out.printf("일\t월\t화\t수\t목\t금\t토\n");
+	
+		
+		
+	}
+}
+
+

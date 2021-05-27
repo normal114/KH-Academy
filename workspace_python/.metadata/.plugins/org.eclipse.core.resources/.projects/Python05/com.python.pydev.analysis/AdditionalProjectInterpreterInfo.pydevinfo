@@ -1,0 +1,19 @@
+-- VERSION_5
+-- START DISKCACHE_3
+/Users/seunghyunson/workspaces/workspace_python/.metadata/.plugins/org.eclipse.core.resources/.projects/Python05/com.python.pydev.analysis/v2_indexcache
+app|1621993544093683693|/Users/seunghyunson/workspaces/workspace_python/Python05/app.py
+-- END DISKCACHE
+-- START DICTIONARY
+2
+2=app
+1=/Users/seunghyunson/workspaces/workspace_python/Python05/app.py
+-- END DICTIONARY
+-- START TREE 1
+3
+app|1|app!1^9#1*19@
+nav|1|naverMovieCrawling!1^21#5*18@
+roo|1|root!1^14#5*18@
+-- END TREE
+-- START TREE 2
+0
+-- END TREE

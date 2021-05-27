@@ -1,0 +1,7 @@
+package com.mvc.semi.board.biz;
+
+public interface BoardBiz {
+
+	public List<BoardDto> accompany_selectList();
+	
+}

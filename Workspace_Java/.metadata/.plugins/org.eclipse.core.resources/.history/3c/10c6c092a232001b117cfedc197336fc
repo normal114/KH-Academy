@@ -1,0 +1,13 @@
+package com.test01;
+
+public class Mtest01 {
+
+	public static void test01() {
+		Scanner sc = new Scanner(System.in);
+	}
+
+	
+	public static void main(String[] args) {
+		
+	}
+}

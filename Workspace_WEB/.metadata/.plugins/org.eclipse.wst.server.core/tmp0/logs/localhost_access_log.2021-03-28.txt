@@ -1,0 +1,3 @@
+127.0.0.1 - - [28/Mar/2021:21:58:23 +0900] "GET / HTTP/1.1" 404 807
+0:0:0:0:0:0:0:1 - - [28/Mar/2021:21:59:11 +0900] "GET /ApiJava/view.jsp HTTP/1.1" 200 3873
+0:0:0:0:0:0:0:1 - - [28/Mar/2021:21:59:22 +0900] "GET /ApiJava/search.do?search=%25EB%2582%2598%25EC%259D%25B4%25ED%2582%25A4&responseBody=responseBody HTTP/1.1" 200 29525

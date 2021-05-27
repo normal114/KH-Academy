@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="myboard">
+
+	<resultMap type="myBoardDto" id="myBoardMap">
+		<result property="myno" column="MYNO" />
+		<result property="groupno" column="GROUPNO" />
+		<result property="groupseq" column="GROUPSEQ" />
+		<result property="titletab" column="TITLETAB" />
+		<result property="delflag" column="DELFLAG" />
+		<result property="myname" column="MYNAME" />
+		<result property="mytitle" column="MYTITLE" />
+		<result property="mycontent" column="MYCONTENT" />
+		<result property="mydate" column="MYDATE" />
+		<result property="viewCnt" column="VIEWCNT" />
+	</resultMap>
+
+	<select id="selectListPage" resultType="myBoardDto" parameterType="com.mvc.upgrade.model.dto.Criteria">
+		SELECT MYNO, GROUPNO, GROUPSEQ, TITLETAB, DELFLAG, MYNAME, MYTITLE, MYCONTENT, MYDATE, VIEWCNT
+		FROM (SELECT MYNO, GROUPNO, GROUPSEQ, TITLETAB, DELFLAG, MYNAME, MYTITLE, MYCONTENT, MYDATE, VIEWCNT, ROW_NUMBER() OVER(ORDER BY MYNO DESC) AS RNUM
+		FROM MYBOARD) MP
+		WHERE RNUM BETWEEN #{rowStart} AND #{rowEnd}
+		ORDER BY MYNO DESC
+	</select>
+	
+	<select id="listCount" resultType="int">
+	<![CDATA[
+		SELECT COUNT(MYNO)
+		FROM MYBOARD
+		WHERE MYNO > 0
+	]]>
+	</select>
+
+	<select id="selectOne" resultMap="myBoardMap"> <!-- resultMap을 사용하지 않을 경우 resultType을 사용하면 된다 -->
+		SELECT MYNO, GROUPNO, GROUPSEQ, TITLETAB, DELFLAG, MYNAME, MYTITLE,
+		MYCONTENT, MYDATE, VIEWCNT
+		FROM MYBOARD
+		WHERE MYNO
+		= ${myno}
+	</select>
+
+	<insert id="insert" parameterType="myBoardDto">
+		INSERT INTO MYBOARD
+		VALUES(MYNOSEQ.NEXTVAL, GROUPNOSEQ.NEXTVAL, 1, 0, 'N', #{myname},
+		#{mytitle}, #{mycontent}, SYSDATE, 0)
+	</insert>
+
+	<update id="update" parameterType="myBoardDto">
+		UPDATE MYBOARD
+		SET MYTITLE =
+		#{mytitle}, MYCONTENT = #{mycontent}
+		WHERE MYNO = #{myno}
+	</update>
+
+	<!-- 조회수 올리기 -->
+	<update id="boardCount" parameterType="int">
+		UPDATE MYBOARD SET VIEWCNT
+		= VIEWCNT + 1
+		WHERE MYNO = #{myno}
+	</update>
+
+	<delete id="delete" parameterType="int">
+		DELETE FROM MYBOARD
+		WHERE MYNO
+		= #{myno}
+	</delete>
+
+	<delete id="multiDelete" parameterType="map">
+		DELETE FROM MYBOARD
+		WHERE MYNO IN
+		<foreach collection="mynoes" item="myno" open="("
+			separator="," close=")">
+			#{myno}
+		</foreach>
+	</delete>
+
+	<update id="answerupdate" parameterType="myBoardDto">
+		UPDATE MYBOARD
+		SET
+		GROUPSEQ = GROUPSEQ + 1
+		WHERE GROUPNO = (SELECT GROUPNO FROM MYBOARD
+		WHERE MYNO = ?)
+		AND GROUPSEQ > (SELECT GROUPSEQ FROM MYBOARD WHERE MYNO
+		= ?);
+	</update>
+
+	<insert id="answerinsert" parameterType="myBoardDto">
+		INSERT INTO MYBOARD
+		VALUES(MYNOSEQ.NEXTVAL,
+		(SELECT GROUPNO FROM MYBOARD WHERE MYNO = ?),
+		(SELECT GROUPSEQ FROM MYBOARD WHERE MYNO = ?) + 1,
+		(SELECT TITLETAB
+		FROM MYBOARD WHERE MYNO = ?) + 1,
+		'N', ?, ?, ?, SYSDATE, 0
+		);
+	</insert>
+
+	<select id="listPaging" parameterType="map" resultType="myBoardDto">
+	<![CDATA[
+		SELECT B.MYNO, B.GROUPNO, B.GROUPSEQ, B.TITLETAB, B.DELFLAG, B.MYNAME, B.MYTITLE, B.MYCONTENT, B.MYDATE, B.VIEWCNT FROM
+		(SELECT ROWNUM AS RNUM, A.MYNO, A.GROUPNO, A.GROUPSEQ, A.TITLETAB, A.DELFLAG, A.MYNAME, A.MYTITLE, A.MYCONTENT, A.MYDATE, A.VIEWCNT FROM
+		(SELECT MYNO, GROUPNO, GROUPSEQ, TITLETAB, DELFLAG, MYNAME, MYTITLE, MYCONTENT, MYDATE, VIEWCNT FROM FROM MYBOARD
+		ORDER BY MYNO DESC) A
+		WHERE ROWNUM <= #{endRow} ) B
+		WHERE B.RNUM > #{startRow}
+	]]>
+	</select>
+
+	<select id="getTotalCount" resultType="int">
+		SELECT COUNT(*) FROM
+		MYBOARD
+	</select>
+
+</mapper>

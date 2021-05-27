@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;Jsp009_AnswerBoard_delflag&apos;" deleteContents="true" description="Delete resource &apos;Jsp009_AnswerBoard_delflag&apos;" element1="/Jsp009_AnswerBoard_delflag" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1619965821352"/>&#x0A;<refactoring comment="Delete resource &apos;Jsp01_MyBoard_Mybatis_ex&apos;" deleteContents="true" description="Delete resource &apos;Jsp01_MyBoard_Mybatis_ex&apos;" element1="/Jsp01_MyBoard_Mybatis_ex" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1619965847612"/>
+</session>

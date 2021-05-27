@@ -1,0 +1,12 @@
+1619152873463	Move 'root-context.xml' to 'appServlet'
+1619152885183	Rename resource 'root-context.xml'
+1619153619893	Delete element
+1619154735665	Rename package 'controller'
+1619154753496	Rename package 'model'
+1619155632758	Rename type 'MYBoardBIz'
+1619157445724	Rename resource 'mybaits'
+1619157668850	Delete element
+1619159585164	Rename resource 'selectlist.jsp'
+1619160267187	Move 'myboard.css' to 'css'
+1619184595648	Delete element
+1619307166785	Delete element

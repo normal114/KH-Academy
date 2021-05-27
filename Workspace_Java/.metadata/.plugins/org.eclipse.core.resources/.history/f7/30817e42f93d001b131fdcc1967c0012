@@ -1,0 +1,16 @@
+package Test;
+
+public class Test02 {
+	
+	public static void main(String[] args) {
+		
+	int mySum = Test01.sum(10, 2);
+	System.out.println(mySum);
+	
+	Test01.sub(10, 3);
+
+	double myMul = Test01.mul(!0, 3);
+	System.out.println();
+	
+	}
+}

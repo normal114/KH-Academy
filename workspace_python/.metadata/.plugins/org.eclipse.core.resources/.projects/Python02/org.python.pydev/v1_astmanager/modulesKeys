@@ -1,0 +1,10 @@
+MODULES_MANAGER_V3
+crawling.__init__|/Users/seunghyunson/workspaces/workspace_python/Python02/crawling/__init__.py
+crawling.insta.__init__|/Users/seunghyunson/workspaces/workspace_python/Python02/crawling/insta/__init__.py
+crawling.insta.insta01|/Users/seunghyunson/workspaces/workspace_python/Python02/crawling/insta/insta01.py
+crawling.insta.insta02|/Users/seunghyunson/workspaces/workspace_python/Python02/crawling/insta/insta02.py
+crawling.naver.__init__|/Users/seunghyunson/workspaces/workspace_python/Python02/crawling/naver/__init__.py
+crawling.naver.movie|/Users/seunghyunson/workspaces/workspace_python/Python02/crawling/naver/movie.py
+crawling.naver.webtoon|/Users/seunghyunson/workspaces/workspace_python/Python02/crawling/naver/webtoon.py
+crawling.star.__init__|/Users/seunghyunson/workspaces/workspace_python/Python02/crawling/star/__init__.py
+crawling.star.starbucks|/Users/seunghyunson/workspaces/workspace_python/Python02/crawling/star/starbucks.py

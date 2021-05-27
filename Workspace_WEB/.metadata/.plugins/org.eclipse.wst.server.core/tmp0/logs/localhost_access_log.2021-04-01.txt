@@ -1,0 +1,5 @@
+127.0.0.1 - - [01/Apr/2021:00:15:50 +0900] "GET / HTTP/1.1" 404 807
+0:0:0:0:0:0:0:1 - - [01/Apr/2021:00:16:38 +0900] "GET /ApiJava/view.jsp HTTP/1.1" 200 3873
+0:0:0:0:0:0:0:1 - - [01/Apr/2021:00:20:12 +0900] "GET /ApiJava/view.jsp HTTP/1.1" 200 3873
+0:0:0:0:0:0:0:1 - - [01/Apr/2021:00:20:17 +0900] "GET /ApiJava/search.do?search=%25EB%2582%2598%25EC%259D%25B4%25ED%2582%25A4&responseBody=responseBody HTTP/1.1" 200 29366
+0:0:0:0:0:0:0:1 - - [01/Apr/2021:00:20:37 +0900] "GET /Health_Friends/views/introduce/introduce.jsp HTTP/1.1" 404 848

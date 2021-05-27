@@ -1,0 +1,30 @@
+package Test;
+
+public class Test01 {
+	
+	private int abc;
+	
+	public Test01() {
+		System.out.println("AAA 생성");
+	}
+	
+	public Test01(int abc) {
+	
+		this.abc = abc;
+		System.out.println("AAA 생성 -> abc : " + abc);
+		
+	}
+	
+	public int getAbc() {
+		return abc;
+	}
+	
+	public void setAbc(int abc) {
+		this.abc = abc;
+	}
+	
+	public void prn() {
+		System.out.println("AAA의 prn() 메소드");
+	}
+	
+}

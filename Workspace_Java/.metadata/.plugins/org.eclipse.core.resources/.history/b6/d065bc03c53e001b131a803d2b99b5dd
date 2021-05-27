@@ -1,0 +1,37 @@
+package Test;
+
+import Test.Test01;
+
+public class Test02 extends Test01 {
+	
+	private int bcd;
+	
+	public Test02() {
+		System.out.println("BBB 생성");
+	}
+	
+	public Test02(int abc) {
+		super(abc);
+		bcd = 10;
+		System.out.println("BBB 생성 -> abc : " + abc);
+	}
+	
+	public Test02(int abc, int bcd);
+		super(abc);
+		this.bcd = bcd;
+		System.out.printf("BBB 생성 -> abc : %d, bcd : %d\n", abc, bcd);
+}
+
+public int getBcd() {
+	return bcd;
+	
+	pubilc void setBcd(int bcd) {
+		this.bcd = bcd;
+	}
+	
+	public int getSum() {
+		r
+	}
+}
+	
+	

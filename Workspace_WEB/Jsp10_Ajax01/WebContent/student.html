@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+
+	function getParameterValues(){
+		var name = "name="+encodeURIComponent($("#name").val());
+		var kor = "kor="+$("#kor").val();
+		var eng = "eng="+$("#eng").val();
+		var math = "math="+$("#math").val();
+		
+		return "?" + name + "&" + kor + "&" + eng + "&" + math; // QueryString이다. localhost:8787/Jsp10_Ajax01/scroe.do가 return이다.
+	}
+
+	$(function(){
+		$("#process").click(function(){
+			var queryString = getParameterValues();
+			// alert(queryString);
+			
+			// Asynchronous Javascript And Xml
+			$.ajax({
+				url: "score.do"+queryString,
+				dataType: "json", // 통신에 성공했을 때 리턴되는 값의 타입이 json이라는 의미이다. 보내는 타입은 data이다.
+				// 만약 위의 코드가 없다면 문자열만 출력되는데 위의 코드를 썼기 때문에 Controller에서 온 코드를 json 타입으로 파싱해 줄 것이다.
+				success: function(msg){ 
+					// msg -> {"name":name, "sum":sum, "avg":avg}
+					$("#result").html(decodeURIComponent(msg.name) + "의 총점 : " + msg.sum + "\n평균 : " + msg.avg);
+				},
+				error: function(){
+					alert("통신 실패");
+				}
+			});
+		});
+	});
+
+</script>
+
+</head>
+<body>
+
+	<h1>성적 처리 프로그램</h1>
+
+	이름 : <input type="text" id="name" /><br/>
+	국어 : <input type="text" id="kor" /><br/>
+	영어 : <input type="text" id="eng" /><br/>
+	수학 : <input type="text" id="math" /><br/>
+	
+	<input type="button" id="process" value="성적처리" /><br/>
+	
+	<div id="result"></div>
+	
+</body>
+</html>

@@ -1,0 +1,11 @@
+package Test;
+
+public class Test01 {
+
+	public static int getSum(int kor, int eng, int math) {
+		
+		int res = kor + eng + math;
+		
+		return res;
+		
+	}

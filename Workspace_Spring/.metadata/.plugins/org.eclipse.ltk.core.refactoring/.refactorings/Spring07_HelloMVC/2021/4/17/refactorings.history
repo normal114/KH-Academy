@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Spring07_HelloMVC/build\classes&apos; to &apos;build&apos;" description="Rename resource &apos;build\classes&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="build\classes" name="build" stamp="1618885975510" updateReferences="true"/>
+</session>

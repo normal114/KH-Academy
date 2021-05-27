@@ -1,0 +1,19 @@
+package com.mvc.upgrade.model.dto;
+
+import java.util.Date;
+
+public class MYBoardDto {
+
+	private int myno;
+	private int groupno;
+	private int groupseq;
+	private int titletab;
+	private String delflag;
+	private String myname;
+	private String mytitle;
+	private String mycontent;
+	private Date mydate;
+	private int viewcnt;
+	
+	
+}

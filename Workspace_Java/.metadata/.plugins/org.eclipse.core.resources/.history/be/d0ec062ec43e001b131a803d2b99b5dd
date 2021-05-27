@@ -1,0 +1,8 @@
+package Test;
+
+public class Test02 {
+	
+	int[][] a = new int[3][2];
+	a[0][0] = 1;
+	a[0][1] = 2;
+	

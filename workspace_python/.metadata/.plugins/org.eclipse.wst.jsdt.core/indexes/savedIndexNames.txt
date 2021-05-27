@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+/Users/seunghyunson/workspaces/workspace_python/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+2599856605.index
+4234715941.index
+3292705463.index
+3914455840.index
+324489786.index
+382125836.index

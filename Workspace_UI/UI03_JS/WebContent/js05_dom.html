@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script type="text/javascript">
+
+	function searchId(){
+		var doc = document.getElementById("test");
+		doc.innerHTML = "id로 탐색합니다.";
+		doc.style.color = "red";
+/* 여기서 document는 문서전체이다. 하지만 문자가 아닌 객체화 된 것을 말한다.
+ * ***** Id는 유일한 하나이다. 따라서 Id에서는 Element로 쓴다. 
+ * Class나 Tag나 Name은 여러 개이기 때문에 Elements로 쓴다. 
+ * Id가 걸려있는 객체 하나를 가져왔다. 이것을 node라 부른다.
+ */
+	}
+
+	function searchName(){
+		var doc = document.getElementsByName("test");
+// 여기서는 getElemt ***** s 이다. s 붙이는 것을 반드시 유의할 것 
+		doc[1].value = "name 속성으로 엘리먼트 탐색했습니다.";
+	}
+	
+	function searchTagName(){
+		var doc = document.getElementsByTagName("p"); 
+// p tag 찾아올 것이다.
+		console.log(doc);
+/* 먼저 개발자도구(브라우저 F12)를 열고 3. 엘리먼트의 ~~~을 클릭하고 console창을 살펴보면 새로운 코드가 보인다.
+ * 거기에 document.getElementById("test").innerHTML="재밌다."; 를 입력하면 재밌다.가 뜬다. 
+ */
+		console.log(typeof doc);
+// object가 뜬다. object(객체)라는 것을 알 수 있다.
+		var doc = document.getElementsByTagName("p");
+		doc[3].innerHTML = "TagName으로 탐색됩니다."; // doc[3]은 3번째 태그를 의미한다.
+ 		doc[3].style.color = "yellowgreen";		
+	
+	}
+	
+	function searchQS(){
+		var doc = document.querySelectorAll("#test"); /* id가 test인 코드를 찾아라 */
+		doc[0].innerHTML = "querySelectAll(css표현식)";
+		
+		var doc2 = document.querySelector("#test");
+		doc2.style.backgroundColor = "green";
+	}
+	
+</script>
+
+</head>
+<body>
+
+	<!-- DOM : Document Object Model -->
+	
+	<p onclick="searchQS();">DOM 탐색 메서드</p>
+	
+	<p id="test" onclick="searchId();">
+	1. 엘리먼트의 id로 탐색 : 엘리먼트 하나를 선택 (중복 불가) -> 반환 값 : node 하나</p>
+	
+	<p onclick="searchName()">
+	2. 엘리먼트의 name으로 탐색 : 엘리먼트 여러 개를 선택 -> 반환 값 : nodeList</br>
+		<input type="text" name="test" /><br/>
+		<input type="text" name="test" /><br/>
+		<input type="text" name="test" /><br/>
+	</p>
+	
+	<p id="test" onclick="searchTagName()">
+	3. 엘리먼트의 태그이름으로 탐색 : 엘리먼트 여러 개를 선택 -> 반환 값 : nodeList</p>
+<!-- 여기 id="test"인데 빨간색으로 바뀌지 않는다.
+	 id는 유일한 하나여야 하기 때문에 위쪽의 id="test만 인식하고
+	 여기 id="test"는 인식하지 못하기 때문이다. -->
+	
+</body>
+</html>

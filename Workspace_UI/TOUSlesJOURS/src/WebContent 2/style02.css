@@ -1,0 +1,7 @@
+@charset "UTF-8";
+
+/* 공통 */	
+body {background-color: #f7f0da;}
+	
+	
+.blind {overflow: hidden; position: absolute; width: 1px; height: 1px; font-size: 1px; text-indent: 101%; white-space: nowrap;}

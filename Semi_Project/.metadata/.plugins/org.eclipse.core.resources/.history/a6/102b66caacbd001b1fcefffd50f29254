@@ -1,0 +1,26 @@
+package com.mvc.semi.model.BoardDto;
+
+import java.util.Date;
+
+public class BoardDto {
+
+	private int postUserNo;
+	private int postId;
+	private int postNo;
+	private String postBoardName;
+	private String postCategoryName;
+	private String postTitle;
+	private String postContent;
+	private String postMdate;
+	private Date postRegdate;
+	private int postHit;
+	private int postCommentHit;
+	private int postLike;
+	private String postDelflag;
+	private String postLatitude;
+	private String postLongitude;
+	private String postThumbNail;
+	
+	
+	
+}

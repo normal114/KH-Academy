@@ -1,0 +1,5 @@
+package com.mvc.semi.board.dto;
+
+public class BoardDto {
+
+}

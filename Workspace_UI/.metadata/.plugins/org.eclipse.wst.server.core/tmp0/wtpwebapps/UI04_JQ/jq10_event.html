@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<style type="text/css">
+	
+	div{
+		width: 400px;
+		height: 200px;
+		border: 2px solid red;
+		padding: 20px;
+		overflow: auto;
+	}
+
+	div p:first-child{
+		float: left;
+		border: 1px solid blue; 
+		width: 150px;
+		height: 150px;
+		text-align: center;
+		line-height: 150px;	
+	}
+	
+	div p:last-child{
+		float: right;
+		border: 1px solid blue;
+		width: 150px;
+		height: 150px;
+		text-align: center;
+		line-height: 150px;
+	}
+		
+</style>
+
+<script type="text/javascript" src="resources/js/jquery-3.5.1.min.js"></script>
+
+<script type="text/javascript">
+
+/*
+ 	이벤트 전파 : 각 요소가 서로 포함관계(중첩)인 경우
+ 			   요소 중 하나에 이벤트가 발생하면 중첩된 요소들도 이벤트가 전파된다.
+	이벤트 전파 막기
+		- stopPropagation() : 이벤트 요소의 전파막기
+		- preventDefault() : 이벤트에 의한 기본 동작 막기
+		- return false : 위의 기능 두 개 모두 적용
+ */
+
+ 	$(function (){
+ 		$("a:eq(0)").click(function(e){
+ 			alert("a click!"); // 여기 alert 밑에 alert 그 밑에 alert 순으로 전파된다.
+ 			// e.stopPropagation(); // 하지만 stopPropagation으로 인해서 여기서 전파가 막혔다. 
+ 			// e.preventDefault(); // alert가 순차적으로 뜨지만 naver화면으로 넘어가지 않는다. 버튼을 눌렀을 때 naver 사이트로 가라는 명령을 없애버렸다.
+ 			return false; // 
+ 		});
+ 		
+ 		$("p").click(function(e){
+ 			alert("p 클릭!");
+ 			// e.stopPropagation();
+ 		});
+ 		
+ 		$("div").click(function(){
+ 			alert("div click!");
+ 		});
+ 		
+ 		$("a:eq(1)").bind({// bind는 event를 묶어주는 것이다. 
+ 			"mouseover":function(){
+ 				$(this).css("background-color", "hotpink");
+ 			},
+ 			"mouseout":function(){
+ 				$(this).css("background-color", "");
+ 			}
+ 		});
+ 
+ 		$("a:eq(0)").bind("mouseover mouseout", function(e){
+ 			if (e.type == "mouseover") {
+ 				$(this).css("background-color", "skyblue");
+ 			}
+ 			if (e.type == "mouseout") {
+ 				$(this).css("background-color", "");
+ 			}
+ 		});
+ 				
+ 		$("span").click(function(){
+ 			$("a:eq(1)").unbind(); // 브라우저에서 unbind() : 이벤트 해체를 누르면 naver 글씨에 마우스 커서를 올려놓으면 배경화면이 파란색으로 뜨는데 daum은 배경화면이 빨간색으로 안뜬다. 
+ 		});
+ 		
+ 		$("button").click(function(){ // 요즘은 bind 방식은 사용하지 않고 on 방식으로 사용한다.
+ 			$("body").append("<p>새로 추가된 p</p>") // 새로 추가된 얘들은 클릭이 안된다. 왜냐하면 만들어지기 전 얘들만 적용되기 때문이다.
+ 		});
+ 		
+ 		$("body").on("click", "p", function(){ // body태그 안에 있는 p태그한테 click event를 연결해 주겠다.
+ 			alert("new p!");
+ 		});
+ 	 	
+ 	});
+		
+</script>
+
+</head>
+<body>
+
+	<span>unbind() : 이벤트 해제</span>
+	<div>
+		<p>
+			<a href="http://www.naver.com">naver</a>
+		</p>
+		<p>클릭</p>
+	</div>
+	<div>
+		<p>
+			<a href="http://www.daum.net">daum</a>
+		</p>
+		<p>클릭</p>
+	</div>
+	<button>요소 추가</button>	
+	
+</body>
+</html>

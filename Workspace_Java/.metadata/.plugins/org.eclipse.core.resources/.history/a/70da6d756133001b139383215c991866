@@ -1,0 +1,27 @@
+package com.test02;
+
+
+public class RandomCube {
+
+	public static void main(String[] args) {
+		
+		
+		
+		/*
+			 * 1 ~ 9 사이의 난수로 이루어진
+			 * 5 * 5 형태의 숫자들을 출력하고, 
+			 * 전체 난수의 평균,
+			 * X의 합
+			 * 을 구하자.
+			 */
+		prnCube();
+		
+		}
+		
+		public static void prnCube() {
+
+			int count = 0;
+			int i = 1;
+			boolean stop = false;
+			
+}

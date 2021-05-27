@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<!-- 3.외부 링크 방식 -->
+<script type="text/javascript" src="resources/js/test.js"></script>
+
+<!-- <alert('?'); 코드를 넣으면 오류가 뜬다.
+**** 외부 링크 안에다가 inline 방식이나 내부 작성 방식을 또 넣으면 안된다. -->
+
+<script type="text/javascript">
+	// 2. 내부 작성 방식
+	function embeddedTest(){
+		var doc = document.getElementsByTagName("li")[1];
+		doc.style.color = "red";
+		doc.innerHTML = "<strong>글자가 바뀝니다!!</strong>";
+	}
+/*
+	script는 자바 스크립트로 동작한다는 코드이다.
+	function은 기능, 함수라는 뜻이다. Java의 method와 기능은 비슷하다. 
+	하지만 method는 class에 종속되어 있는 반면 function은 단독으로 사용된다.
+	var은 변수이다. 알아서 오른쪽이 무엇인지 출력해줄 것이다. 
+	Java Script는 변수가 단독으로 쓰이기 때문에 유지/보수가 힘들어서 typescript이 유행이다. 
+*/
+ </script>
+
+</head>
+<body>
+
+	<h1>자바스크립트 작성방식 3가지</h1>
+	
+	<ol>
+		<!-- 1.inline -->
+		<li onclick="alert('inline');">inline 방식</li>
+<!-- 위 코드와 같이 태그에 바로 명령하는 것은 인라인 방식이다. -->
+		
+		<li onclick="embeddedTest();">내부 작성 방식</li>
+<!-- 위 코드와 같이 같은 .html 내부에서 style tag를 지정하여 명령하는 게 내부 작성 방식이다. -->
+		
+		<li onclick="test();">외부 링크 방식 (*.js)</li>
+<!-- 위 코드와 같이 .js file을 바로 만들어서 script tag로 불러들이는 방식이 외부 링크 방식이다. 
+	 외부 링크 방식 style tag에는 내부 작성 방식을 혼합하여 사용할 수 없다. -->
+
+	</ol>
+	
+</body>
+</html>

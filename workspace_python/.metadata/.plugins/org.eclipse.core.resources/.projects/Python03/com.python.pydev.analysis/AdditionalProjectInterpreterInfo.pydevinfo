@@ -1,0 +1,28 @@
+-- VERSION_5
+-- START DISKCACHE_3
+/Users/seunghyunson/workspaces/workspace_python/.metadata/.plugins/org.eclipse.core.resources/.projects/Python03/com.python.pydev.analysis/v2_indexcache
+hello.__init__|1620871370620161138|/Users/seunghyunson/workspaces/workspace_python/Python03/hello/__init__.py
+hello.hello01|1620871913420427989|/Users/seunghyunson/workspaces/workspace_python/Python03/hello/hello01.py
+hello.hello02|1620872061690197872|/Users/seunghyunson/workspaces/workspace_python/Python03/hello/hello02.py
+hello.hello03|1620872345945806574|/Users/seunghyunson/workspaces/workspace_python/Python03/hello/hello03.py
+hello.hello04|1620873065284009078|/Users/seunghyunson/workspaces/workspace_python/Python03/hello/hello04.py
+-- END DISKCACHE
+-- START DICTIONARY
+8
+7=/Users/seunghyunson/workspaces/workspace_python/Python03/hello/hello04.py
+5=/Users/seunghyunson/workspaces/workspace_python/Python03/hello/hello03.py
+1=/Users/seunghyunson/workspaces/workspace_python/Python03/hello/hello02.py
+4=hello.hello01
+2=hello.hello02
+6=hello.hello03
+8=hello.hello04
+3=/Users/seunghyunson/workspaces/workspace_python/Python03/hello/hello01.py
+-- END DICTIONARY
+-- START TREE 1
+2
+app|4|app!1^5#1*19@app!3^5#1*35@app!5^6#1*51@app!7^7#1*67@
+hel|7|hello_root!7^11#5*66@hello_root!5^10#5*50@hello_root!1^9#5*18@hello_test!7^22#5*66@hello_flask!1^14#5*18@hello!3^9#5*34@hello_test!5^15#5*50@
+-- END TREE
+-- START TREE 2
+0
+-- END TREE

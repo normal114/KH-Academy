@@ -1,0 +1,9 @@
+package Test;
+
+public class Test01 {
+	
+	private class Car {
+	private int speed;
+	
+	}
+}

@@ -1,0 +1,10 @@
+package Test;
+
+public class Test01 {
+	
+	public static void main(String[] args) {
+		
+		byte b01 = 126;
+		System.out.println(b01);
+	}
+}

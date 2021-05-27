@@ -1,0 +1,10 @@
+package Test;
+
+public class StringGame01 {
+
+	public static void main(String[] args) {
+		String str = new String("tESt sTring change first");
+		
+		
+	}
+}

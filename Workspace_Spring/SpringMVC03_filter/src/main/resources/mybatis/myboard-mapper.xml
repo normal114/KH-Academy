@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="myboard">
+
+	<resultMap type="myBoardDto" id="myBoardMap">
+		<result property="myno" column="MYNO" />
+		<result property="myname" column="MYNAME" />
+		<result property="mytitle" column="MYTITLE" />
+		<result property="mycontent" column="MYCONTENT" />
+		<result property="mydate" column="MYDATE" />
+	</resultMap>
+
+	<select id="selectList" resultType="myBoardDto">
+		SELECT MYNO, MYNAME, MYTITLE,
+		MYCONTENT, MYDATE, VIEWCNT
+		FROM MYBOARD
+		ORDER BY MYNO DESC
+	</select>
+
+	<select id="selectOne" resultMap="myBoardMap"> <!-- resultMap을 사용하지 않을 경우 resultType을 사용하면 된다 -->
+		SELECT MYNO, MYNAME, MYTITLE, MYCONTENT, MYDATE, VIEWCNT
+		FROM MYBOARD
+		WHERE MYNO
+		= ${myno}
+	</select>
+
+	<insert id="insert" parameterType="myBoardDto">
+		INSERT INTO MYBOARD
+		VALUES(MYNOSEQ.NEXTVAL, #{myname}, #{mytitle}, #{mycontent}, SYSDATE,
+		0)
+	</insert>
+
+	<update id="update" parameterType="myBoardDto">
+		UPDATE MYBOARD
+		SET MYTITLE =
+		#{mytitle}, MYCONTENT = #{mycontent}
+		WHERE MYNO = #{myno}
+	</update>
+
+	<delete id="delete" parameterType="int">
+		DELETE FROM MYBOARD
+		WHERE MYNO
+		= #{myno}
+	</delete>
+
+	<update id="answerupdate" parameterType="myBoardDto">
+		UPDATE MYBOARD
+		SET
+		GROUPSEQ = GROUPSEQ + 1
+		WHERE GROUPNO = (SELECT GROUPNO FROM MYBOARD
+		WHERE MYNO = ?)
+		AND GROUPSEQ > (SELECT GROUPSEQ FROM MYBOARD WHERE MYNO
+		= ?);
+	</update>
+
+	<insert id="answerinsert" parameterType="myBoardDto">
+		INSERT INTO MYBOARD
+		VALUES(MYNOSEQ.NEXTVAL,
+		(SELECT GROUPNO FROM MYBOARD WHERE MYNO = ?),
+		(SELECT GROUPSEQ FROM MYBOARD WHERE MYNO = ?) + 1,
+		(SELECT TITLETAB
+		FROM MYBOARD WHERE MYNO = ?) + 1,
+		'N', ?, ?, ?, SYSDATE, 0
+		);
+	</insert>
+	
+	<!-- 게시물 총 갯수 -->
+	<select id="count" resultType="int">
+		SELECT COUNT(MYNO) FROM MYBOARD
+	</select>
+
+</mapper>

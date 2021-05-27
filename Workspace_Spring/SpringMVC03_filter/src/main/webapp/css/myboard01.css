@@ -1,0 +1,280 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.main02 {
+	padding-top: 60px;
+}
+
+.board {
+	margin: 0 260px;
+}
+
+caption {
+	display: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.board_list_wrap {
+	padding: 50px;
+}
+
+.board_list {
+	width: 100%;
+	border-top: 2px solid GoldenRod;
+	border-bottom:2px solid GoldenRod;
+}
+
+.board_list .box {
+	width: 5%
+}
+
+.board_list .num {
+	width: 10%
+}
+
+.board_list .writer {
+	width: 15%
+}
+
+.board_list .title {
+	width: 40%
+}
+
+.board_list .regdate {
+	width: 20%
+}
+
+.board_list .viewcnt {
+	width: 10%
+}
+
+.board_list tr {
+	border-bottom: 1px solid #999;
+}
+
+.board_list td {
+	text-align: center;
+}
+
+.board_list th, .board_list td {
+	padding: 14px;
+	font-size: 14px;
+}
+
+.board_list tbody tr td:nth-child(4) {
+	text-align: left;
+}
+
+.board_list .tit:hover {
+	text-decoration: underline;
+}
+
+.board_list_wrap .paging {
+	margin-top: 20px;
+	text-align: center;
+	font-size: 0;
+}
+
+.board_list_wrap .paging a {
+	display: inline-block;
+	margin-left: 10px;
+	padding: 5px 10px;
+	border: 1px solid GoldenRod;
+	border-radius: 100px;
+	font-size: 14px;
+}
+
+.board_list_wrap .paging a:first-child {
+	margin-left: 0;
+}
+
+.board_list_wrap .paging a.bt {
+	border: 1px solid #eee;
+	background: #eee;
+}
+
+.board_list_wrap .paging a.num {
+	border: 1px solid GoldenRod;
+	font-weight: 600;
+	color: GoldenRod;
+}
+
+.board_list_wrap .paging a.num.on {
+	background: GoldenRod;
+	color: #fff;
+}
+
+.bt_wrap a {
+	display: inline-block;
+	min-width: 80px;
+	margin-left: 10px;
+	padding: 8px;
+	border: 1px solid GoldenRod;
+	border-radius: 2px;
+	font-size: 14px;
+}
+
+.bt_wrap a.on {
+	background: GoldenRod;
+	color: white;
+	border-radius: 100px;
+}
+
+.bt_wrap a.on:hover {
+	background: GoldenRod;
+	color: white;
+	border-radius: 100px;
+	text-decoration: underline white;
+}
+
+.bt_wrap a.off {
+	color: GoldenRod;
+	border-radius: 100px;
+}
+
+.bt_wrap a.off:hover {
+	color: GoldenRod;
+	border-radius: 100px;
+	text-decoration: underline GoldenRod;
+}
+
+div .pagemove {
+	width: 30px;
+	height: 30px;
+	border: 1px solid GoldenRod;
+	border-radius: 100%;
+	color: GoldenRod;
+}
+
+div .pagemove:hover {
+	width: 30px;
+	height: 30px;
+	border: 1px solid lightgray;
+	border-radius: 100%;
+	background-color: lightgray;
+	color: white;
+}
+
+.paging {
+	margin-top: 40px;
+	margin-bottom: 50px;
+	text-align: center;
+	font-size: 0;
+}
+
+.paging a {
+	display: inline-block;
+	margin-left: 10px;
+	padding: 5px 10px;
+	border: 1px solid teal;
+	border-radius: 100px;
+	font-size: 14px;
+}
+
+#paging {
+	border: none;
+	background-Color: #F5F5F5;
+	font: 18px;
+	border-radius: 100px;
+	color: black;
+	width: 86px;
+	height: 32px;
+	cursor: pointer;
+}
+
+#paging:hover {
+	border: none;
+	background-Color: lightgray;
+	font: 18px;
+	border-radius: 100px;
+	color: black;
+	width: 86px;
+	height: 32px;
+	cursor: pointer;
+}
+
+.pagination {
+	padding: 0 0;
+	text-align: center;
+}
+
+.pagination a {
+	padding: 3px 8px;
+	margin: 5px;
+	cursor: pointer;
+}
+
+.pagination a.on {
+	width: 30px;
+	height: 30px;
+	border: 1px solid GoldenRod;
+	border-radius: 100%;
+	background-color: GoldenRod;
+	color: white;
+}
+
+#mpage01 {
+	border: none;
+	background-Color: GoldenRod;
+	border: 1px solid white;
+	font-size: 14px;
+	border-radius: 100px;
+	color: white;
+	width: 86px;
+	height: 32px;
+	cursor: pointer;
+	vertical-align: 4px;
+}
+
+#mpage01:hover {
+	border: none;
+	background-Color: GoldenRod;
+	border: 1px solid white;
+	font-size: 14px;
+	border-radius: 100px;
+	text-decoration: underline white;
+	color: white;
+	width: 86px;
+	height: 32px;
+	cursor: pointer;
+	vertical-align: 4px;
+}
+
+#mpage02 {
+border:none;
+background-Color: white;
+border: 1px solid GoldenRod;  
+font-size:14px;     
+border-radius: 100px;   
+color: GoldenRod;    
+width: 86px;height:32px; 
+cursor: pointer;
+vertical-align: 4px;
+}
+
+#mpage02:hover {
+border:none;
+background-Color:white;
+border: 1px solid GoldenRod;  
+font-size:14px;     
+border-radius: 100px;
+text-decoration: underline GoldenRod;   
+color: GoldenRod;    
+width: 86px;height:32px; 
+cursor: pointer;
+vertical-align: 4px;
+}
+
+.individual01 {
+	margin-top: 20px;
+	text-align: right;
+}
+
+.noresize {
+	resize: none;
+}

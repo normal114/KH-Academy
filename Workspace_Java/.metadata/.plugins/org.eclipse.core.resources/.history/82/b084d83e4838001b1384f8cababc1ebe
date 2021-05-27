@@ -1,0 +1,15 @@
+package com.cal02;
+
+// 달력 만들기
+// java.util.Calendar 사용해서 만들기
+
+public class CalendarUseApi {
+
+	public void prn(int year, int month) {
+		
+		// Calendar
+		// Calendar cal = new Calendar(); X -> singleton
+	}
+}
+
+

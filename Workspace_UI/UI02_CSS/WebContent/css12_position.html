@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<style type="text/css">
+
+	/* 
+		relative : 원래 위치 기준으로
+		absolute : 부모 위치 기준으로
+		   fixed : 브라우저에서의 위치
+	*/
+	
+	#box {
+		position: relative;
+		width: 550px;
+		border: 1px dotted red;
+/* .myred, .myblue, .mygreen의 기준이 되는 빨간색 점선 박스 하나를 만든다. */
+/* position:relative는 내 기준이 된다. */ 
+	}
+	p {
+		width: 130px;
+		height: 80px;
+		color: #fff;
+		font-weight: bold;
+	}
+	.myred {
+		background: red;
+		position: relative;
+/* *****원래대로라면 <p> tag를 쓰기 때문에 빨간색, 파란색, 녹색 순으로 만들어져야 한다. */
+/* absolute는 부모 위치를 찾는데 부모는 반드시 relative로 만들어야 한다. 안 그러면 body까지 타고 올라간다. */
+	}
+	.myblue {
+		background: blue;
+		position: absolute;
+		left: 100px;
+		top: 30px;
+		z-index: 2;
+/* 빨간색선 네모 기준으로 왼쪽으로부터 100px, 위에서부터 30px 위치에 있다. 따라서 .myred와 겹치게 된다. */
+/* 만약 파란색 박스가 위치를 이동하게 된다면, 원래 파란색 박스 위치에 녹색 박스가 위치하게 된다. */
+/* 자식 tag이기 때문에 absolute로 만들었다. */
+
+	}
+	.mygreen {
+		background: green;
+		position: relative;
+		left: 30px;
+		top: -30px;
+/* .mygreen은 relative이기 때문에 자기 위치 기준(빨간색 네모 아래)에서 왼쪽으로부터 30px, 위에서부터 -30px으로 이동한다. */
+
+	}
+	.myred:hover {
+		z-index: 5;
+	}
+	.myblue:hover {
+		z-index: 5;
+	}
+	.mygreen:hover {
+		z-index: 5;
+	}
+/* 점이 여러 개 모이면 선이 되고 선이 여러개 모이면 
+x, y, z에서  
+z-index는 z축을 기준으로 얼마나 나오느냐, 
+따라서 빨간색 박스에 마우스 커서를 올려놓으면(hover) 빨간색이 나오게 되고
+파란색 박스에 마우스 커서를 올려놓으면 파란색 박스가 나오게 되고
+녹색 박스에 마우스 커서를 올려놓으면 녹색 박스가 위로 올라가게 된다. */ 
+/* 처음에 파란색 박스가 위로 올라가게 된 이유는 이미 z-index: 2로 잡았기 때문이다. */ 
+z-index는 
+	#fixed {
+		width: 100px;
+		height: 300px;
+		background: yellowgreen;
+		position: fixed;
+		right: 50px;
+		top: 100px;
+/* fixed(고정된)는 브라우저의 오른쪽에서부터 50px, 
+위에서부터 100px 위치에 고정된다. 
+브라우저 밑이나 위로 드래그해도 같이 따라온다. */
+	}
+	
+</style>
+
+</head>
+<body>
+
+	<div id="box">
+		<p class="myred">박스의 크기와 위치를 잘 살펴보아야 합니다.</p>
+		<p class="myblue">박스의 포지션 속성을 바꿔가며 테스트 해 보아야 합니다.</p>
+		<p class="mygreen">포지션을 이해하기 위해서는 시험해보고 관찰해 보는 것이 절대적으로 필요합니다.</p>
+	</div>
+
+	<div id="fixed">
+		Fixed!!
+	</div>
+
+	<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+	<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+	<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+	<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+	<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+</body>
+</html>

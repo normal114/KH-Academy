@@ -1,0 +1,15 @@
+package Test;
+
+import 
+
+public class shupp {
+
+	List<Integer> tean = new ArrayList<Integer>();
+	team.add(1);
+	team.add(2);
+	team.add(3);
+	team.add(4);
+	team.add(5);
+	
+	for(int)
+}

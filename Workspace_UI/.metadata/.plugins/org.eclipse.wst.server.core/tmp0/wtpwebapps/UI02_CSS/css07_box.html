@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<style type="text/css">
+
+	dl, dt, dd, p {
+		margin: 0;
+		padding: 0;
+	}
+	/* 주석 */
+/* 위의 margin: 0;과 padding: 0;은 margin과 padding 값을 초기화 시켜주는 것이다. 디자인 꿀 팁이다. */
+	.box {
+		width: 600px;
+		border: 3px #123456 double;
+/* 구조화 된 dd, dt를 큰 box로 잡아준다. width는 */
+	}
+	dt {
+		background: #abcdef;
+		text-align: center;
+		font-size: 20px;
+		letter-spacing: 15px;
+		padding: 15px;
+		border-bottom: #123456 5px double;
+/* border-bottom은 dt라는 태그의 바닥 테두리를 #123456 색깔의 5px의 double(두 줄)을 그어준다. */
+	}
+	dd {
+		padding: 10px;
+	}
+	.line {
+		border-bottom: #123456 1px dotted;
+/* .line의 밑 줄을 색 #123456으로 바꾸고 1px의 dotted(점선)으로 바꾼다. */
+	}
+	
+</style>
+
+</head>
+<body>
+
+	<dl class="box">
+		<dt>드래곤 라자 명언</dt>
+		<dd class="line">
+			<h2>샌슨 네드발</h2>
+			<p>저와 말이 함께 후치를 타면 됩니다.</p>
+		</dd>
+		<dd>
+			<h2>핸드레이크</h2>
+			<p>나는 단수가 아니다.</p>
+		</dd>	
+	</dl>
+
+
+
+</body>
+</html>
+
+<!-- 더 알아보고 싶은 내용이 있다면 CSS PowerPoint 54 Page를 참고한다. -->
+<!-- px보다 % 또는 em을 사용한다. %, em은 박스의 크기를 줄이고 늘릴 수 있다. px는 불가능하다. -->

@@ -1,0 +1,17 @@
+127.0.0.1 - - [27/Apr/2021:06:32:14 +0900] "GET / HTTP/1.1" 404 807
+0:0:0:0:0:0:0:1 - - [27/Apr/2021:06:32:16 +0900] "GET /Jsp09_AnswerBoard_delflag/ HTTP/1.1" 500 3058
+0:0:0:0:0:0:0:1 - - [27/Apr/2021:06:32:17 +0900] "GET /favicon.ico HTTP/1.1" 404 818
+127.0.0.1 - - [27/Apr/2021:06:32:49 +0900] "GET / HTTP/1.1" 404 807
+0:0:0:0:0:0:0:1 - - [27/Apr/2021:06:32:51 +0900] "GET /Jsp09_AnswerBoard/ HTTP/1.1" 200 2988
+0:0:0:0:0:0:0:1 - - [27/Apr/2021:06:32:55 +0900] "GET /Jsp09_AnswerBoard/answer.do?command=detail&boardno=6 HTTP/1.1" 200 741
+0:0:0:0:0:0:0:1 - - [27/Apr/2021:06:32:57 +0900] "GET /Jsp09_AnswerBoard/answer.do?command=answerform&boardno=6 HTTP/1.1" 200 860
+0:0:0:0:0:0:0:1 - - [27/Apr/2021:06:33:05 +0900] "GET /Jsp09_AnswerBoard/answer.do?command=detail&boardno=9 HTTP/1.1" 200 753
+0:0:0:0:0:0:0:1 - - [27/Apr/2021:06:33:06 +0900] "GET /Jsp09_AnswerBoard/answer.do?command=answerform&boardno=9 HTTP/1.1" 200 872
+0:0:0:0:0:0:0:1 - - [27/Apr/2021:06:33:09 +0900] "GET /Jsp09_AnswerBoard/answer.do?command=detail&boardno=6 HTTP/1.1" 200 741
+0:0:0:0:0:0:0:1 - - [27/Apr/2021:06:33:10 +0900] "GET /Jsp09_AnswerBoard/answer.do?command=answerform&boardno=6 HTTP/1.1" 200 860
+0:0:0:0:0:0:0:1 - - [27/Apr/2021:06:33:20 +0900] "POST /Jsp09_AnswerBoard/answer.do HTTP/1.1" 200 149
+0:0:0:0:0:0:0:1 - - [27/Apr/2021:06:33:21 +0900] "GET /Jsp09_AnswerBoard/answer.do?command=list HTTP/1.1" 200 2988
+0:0:0:0:0:0:0:1 - - [27/Apr/2021:06:33:25 +0900] "GET /Jsp09_AnswerBoard/answer.do?command=detail&boardno=9 HTTP/1.1" 200 753
+0:0:0:0:0:0:0:1 - - [27/Apr/2021:06:33:27 +0900] "GET /Jsp09_AnswerBoard/answer.do?command=answerform&boardno=9 HTTP/1.1" 200 872
+0:0:0:0:0:0:0:1 - - [27/Apr/2021:06:33:34 +0900] "POST /Jsp09_AnswerBoard/answer.do HTTP/1.1" 200 165
+0:0:0:0:0:0:0:1 - - [27/Apr/2021:06:33:35 +0900] "GET /Jsp09_AnswerBoard/answer.do?command=answerform&boardno=9 HTTP/1.1" 200 872

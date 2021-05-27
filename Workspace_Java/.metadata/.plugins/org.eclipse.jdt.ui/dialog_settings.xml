@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="org.eclipse.jdt.ui.last.selected.jre.kind2" value="2"/>
+	<item key="org.eclipse.jdt.ui.last.selected.execution.enviroment" value="JavaSE-11"/>
+	<item key="TypeHierarchyViewPart.hierarchyview" value="2"/>
+	<item key="TypeHierarchyViewPart.qualifiednames" value="false"/>
+	<item key="TypeHierarchyViewPart.linkeditors" value="false"/>
+	<item key="TypeHierarchyViewPart.orientation" value="3"/>
+	<item key="org.eclipse.jdt.ui.lastextjar" value="/Users/seunghyunson/Desktop"/>
+	<section name="JavaElementSearchActions">
+	</section>
+	<section name="OptionalMessageDialog.hide.">
+		<item key="org.eclipse.jdt.ui.typecomment.deprecated" value="true"/>
+	</section>
+	<section name="NewClassWizardPage">
+		<item key="create_constructor" value="false"/>
+		<item key="create_unimplemented" value="true"/>
+	</section>
+	<section name="completion_proposal_size">
+	</section>
+	<section name="quick_assist_proposal_size">
+	</section>
+	<section name="NewPackageWizardPage">
+		<item key="create_package_info_java" value="false"/>
+	</section>
+	<section name="org.eclipse.jdt.internal.ui.packageview.PackageExplorerPart">
+		<item key="group_libraries" value="true"/>
+		<item key="layout" value="2"/>
+		<item key="rootMode" value="1"/>
+		<item key="linkWithEditor" value="false"/>
+		<item key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0D;&#x0A;&lt;packageExplorer group_libraries=&quot;1&quot; layout=&quot;2&quot; linkWithEditor=&quot;0&quot; rootMode=&quot;1&quot; workingSetName=&quot;Aggregate for window 1605851129932&quot;&gt;&#x0D;&#x0A;&lt;customFilters userDefinedPatternsEnabled=&quot;false&quot;&gt;&#x0D;&#x0A;&lt;xmlDefinedFilters&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.StaticsFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.buildship.ui.packageexplorer.filter.gradle.buildfolder&quot; isEnabled=&quot;true&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.mylyn.java.ui.MembersFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.NonSharedProjectsFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.internal.ui.PackageExplorer.EmptyInnerPackageFilter&quot; isEnabled=&quot;true&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.m2e.MavenModuleFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.buildship.ui.packageexplorer.filter.gradle.subProject&quot; isEnabled=&quot;true&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.ClosedProjectsFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.EmptyLibraryContainerFilter&quot; isEnabled=&quot;true&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.PackageDeclarationFilter&quot; isEnabled=&quot;true&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.pde.ui.BinaryProjectFilter1&quot; isEnabled=&quot;false&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.LocalTypesFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.pde.ui.ExternalPluginLibrariesFilter1&quot; isEnabled=&quot;true&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.FieldsFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.NonJavaProjectsFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer_patternFilterId_.*&quot; isEnabled=&quot;true&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.SyntheticMembersFilter&quot; isEnabled=&quot;true&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.ContainedLibraryFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.internal.ui.PackageExplorer.HideInnerClassFilesFilter&quot; isEnabled=&quot;true&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.DeprecatedMembersFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.ImportDeclarationFilter&quot; isEnabled=&quot;true&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.NonJavaElementFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.LibraryFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.CuAndClassFileFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.internal.ui.PackageExplorer.EmptyPackageFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.NonPublicFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0D;&#x0A;&lt;/xmlDefinedFilters&gt;&#x0D;&#x0A;&lt;/customFilters&gt;&#x0D;&#x0A;&lt;/packageExplorer&gt;"/>
+	</section>
+	<section name="javadoc">
+		<item key="javadoc_command_history" value="C:\Program Files\Amazon Corretto\jdk11.0.9_12\bin\javadoc.exe"/>
+		<item key="fromStandard" value="true"/>
+		<item key="docletname" value=""/>
+		<item key="docletpath" value=""/>
+		<item key="access" value="public"/>
+		<item key="use" value="true"/>
+		<item key="author" value="true"/>
+		<item key="version" value="true"/>
+		<item key="nodeprecated" value="false"/>
+		<item key="nodeprecatedlist" value="false"/>
+		<item key="splitindex" value="true"/>
+		<item key="noindex" value="false"/>
+		<item key="notree" value="false"/>
+		<item key="nonavbar" value="false"/>
+		<item key="openinbrowser" value="false"/>
+		<item key="source" value="11"/>
+		<item key="antpath" value="C:\Workspaces\Workspace_Java\Java00_Hello\javadoc.xml"/>
+		<item key="destdir" value="C:\Workspaces\Workspace_Java\Java00_Hello\doc"/>
+		<item key="vmparam" value="-locale ko_KR -encoding UTF-8 -charset UTF-8 -docencoding UTF-8"/>
+		<section name="projects">
+			<section name="00_Java_Hello">
+				<item key="href" value=""/>
+				<item key="destdir" value="/Users/seunghyunson/workspacese/Workspace_Java/00_Java_Hello/doc"/>
+				<item key="antpath" value="/Users/seunghyunson/workspacese/Workspace_Java/00_Java_Hello/javadoc.xml"/>
+			</section>
+			<section name="Java10_Array">
+				<item key="href" value=""/>
+				<item key="destdir" value="/Users/seunghyunson/workspacese/Workspace_Java/Java10_Array/doc"/>
+				<item key="antpath" value="/Users/seunghyunson/workspacese/Workspace_Java/Java10_Array/javadoc.xml"/>
+			</section>
+			<section name="Test01">
+				<item key="href" value=""/>
+				<item key="destdir" value="/Users/seunghyunson/workspacese/Workspace_Java/Test01/doc"/>
+				<item key="antpath" value="/Users/seunghyunson/workspacese/Workspace_Java/Test01/javadoc.xml"/>
+			</section>
+			<section name="tomcat">
+				<item key="href" value=""/>
+				<item key="destdir" value="/Users/seunghyunson/workspacese/Workspace_Java/tomcat/doc"/>
+				<item key="antpath" value="/Users/seunghyunson/workspacese/Workspace_Java/tomcat/javadoc.xml"/>
+			</section>
+			<section name="Java03_Operator">
+				<item key="href" value=""/>
+				<item key="destdir" value="/Users/seunghyunson/workspacese/Workspace_Java/Java03_Operator/doc"/>
+				<item key="antpath" value="/Users/seunghyunson/workspacese/Workspace_Java/Java03_Operator/javadoc.xml"/>
+			</section>
+			<section name="DBTest02">
+				<item key="href" value=""/>
+				<item key="destdir" value="/Users/seunghyunson/workspacese/Workspace_Java/DBTest02/doc"/>
+				<item key="antpath" value="/Users/seunghyunson/workspacese/Workspace_Java/DBTest02/javadoc.xml"/>
+			</section>
+			<section name="Java05_Switch">
+				<item key="href" value=""/>
+				<item key="destdir" value="/Users/seunghyunson/workspacese/Workspace_Java/Java05_Switch/doc"/>
+				<item key="antpath" value="/Users/seunghyunson/workspacese/Workspace_Java/Java05_Switch/javadoc.xml"/>
+			</section>
+			<section name="Test">
+				<item key="href" value=""/>
+				<item key="destdir" value="/Users/seunghyunson/workspacese/Workspace_Java/Test/doc"/>
+				<item key="antpath" value="/Users/seunghyunson/workspacese/Workspace_Java/Test/javadoc.xml"/>
+			</section>
+			<section name="Abstract_Interface">
+				<item key="href" value=""/>
+				<item key="destdir" value="/Users/seunghyunson/workspacese/Workspace_Java/Abstract_Interface/doc"/>
+				<item key="antpath" value="/Users/seunghyunson/workspacese/Workspace_Java/Abstract_Interface/javadoc.xml"/>
+			</section>
+			<section name="Java15_Collection">
+				<item key="href" value=""/>
+				<item key="destdir" value="/Users/seunghyunson/workspacese/Workspace_Java/Java15_Collection/doc"/>
+				<item key="antpath" value="/Users/seunghyunson/workspacese/Workspace_Java/Java15_Collection/javadoc.xml"/>
+			</section>
+			<section name="Java02_Method">
+				<item key="href" value=""/>
+				<item key="destdir" value="/Users/seunghyunson/workspacese/Workspace_Java/Java02_Method/doc"/>
+				<item key="antpath" value="/Users/seunghyunson/workspacese/Workspace_Java/Java02_Method/javadoc.xml"/>
+			</section>
+			<section name="Java19_URI">
+				<item key="href" value=""/>
+				<item key="destdir" value="/Users/seunghyunson/workspacese/Workspace_Java/Java19_URI/doc"/>
+				<item key="antpath" value="/Users/seunghyunson/workspacese/Workspace_Java/Java19_URI/javadoc.xml"/>
+			</section>
+			<section name="Servers">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Workspaces\Workspace_Java\Servers\doc"/>
+				<item key="antpath" value="C:\Workspaces\Workspace_Java\Servers\javadoc.xml"/>
+			</section>
+			<section name="DBTest01">
+				<item key="href" value=""/>
+				<item key="destdir" value="/Users/seunghyunson/workspacese/Workspace_Java/DBTest01/doc"/>
+				<item key="antpath" value="/Users/seunghyunson/workspacese/Workspace_Java/DBTest01/javadoc.xml"/>
+			</section>
+			<section name="DBTest05">
+				<item key="href" value=""/>
+				<item key="destdir" value="/Users/seunghyunson/workspacese/Workspace_Java/DBTest05/doc"/>
+				<item key="antpath" value="/Users/seunghyunson/workspacese/Workspace_Java/DBTest05/javadoc.xml"/>
+			</section>
+			<section name="Java00_Hello">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Workspaces\Workspace_Java\Java00_Hello\doc"/>
+				<item key="antpath" value="C:\Workspaces\Workspace_Java\Java00_Hello\javadoc.xml"/>
+			</section>
+			<section name="Java12_Practise02">
+				<item key="href" value=""/>
+				<item key="destdir" value="/Users/seunghyunson/workspacese/Workspace_Java/Java12_Practise02/doc"/>
+				<item key="antpath" value="/Users/seunghyunson/workspacese/Workspace_Java/Java12_Practise02/javadoc.xml"/>
+			</section>
+			<section name="Java11_String">
+				<item key="href" value=""/>
+				<item key="destdir" value="/Users/seunghyunson/workspacese/Workspace_Java/Java11_String/doc"/>
+				<item key="antpath" value="/Users/seunghyunson/workspacese/Workspace_Java/Java11_String/javadoc.xml"/>
+			</section>
+			<section name="Tread">
+				<item key="href" value=""/>
+				<item key="destdir" value="/Users/seunghyunson/workspacese/Workspace_Java/Tread/doc"/>
+				<item key="antpath" value="/Users/seunghyunson/workspacese/Workspace_Java/Tread/javadoc.xml"/>
+			</section>
+			<section name="Java19_URI_Web">
+				<item key="href" value=""/>
+				<item key="destdir" value="/Users/seunghyunson/workspacese/Workspace_Java/Java19_URI_Web/doc"/>
+				<item key="antpath" value="/Users/seunghyunson/workspacese/Workspace_Java/Java19_URI_Web/javadoc.xml"/>
+			</section>
+			<section name="Java13_Class">
+				<item key="href" value=""/>
+				<item key="destdir" value="/Users/seunghyunson/workspacese/Workspace_Java/Java13_Class/doc"/>
+				<item key="antpath" value="/Users/seunghyunson/workspacese/Workspace_Java/Java13_Class/javadoc.xml"/>
+			</section>
+			<section name="Java20_Network">
+				<item key="href" value=""/>
+				<item key="destdir" value="/Users/seunghyunson/workspacese/Workspace_Java/Java20_Network/doc"/>
+				<item key="antpath" value="/Users/seunghyunson/workspacese/Workspace_Java/Java20_Network/javadoc.xml"/>
+			</section>
+			<section name="01_Java_Type">
+				<item key="href" value=""/>
+				<item key="destdir" value="/Users/seunghyunson/workspacese/Workspace_Java/01_Java_Type/doc"/>
+				<item key="antpath" value="/Users/seunghyunson/workspacese/Workspace_Java/01_Java_Type/javadoc.xml"/>
+			</section>
+			<section name="Java08_Scanner">
+				<item key="href" value=""/>
+				<item key="destdir" value="/Users/seunghyunson/workspacese/Workspace_Java/Java08_Scanner/doc"/>
+				<item key="antpath" value="/Users/seunghyunson/workspacese/Workspace_Java/Java08_Scanner/javadoc.xml"/>
+			</section>
+			<section name="Java17_IO">
+				<item key="href" value=""/>
+				<item key="destdir" value="/Users/seunghyunson/workspacese/Workspace_Java/Java17_IO/doc"/>
+				<item key="antpath" value="/Users/seunghyunson/workspacese/Workspace_Java/Java17_IO/javadoc.xml"/>
+			</section>
+			<section name="Javaking">
+				<item key="href" value=""/>
+				<item key="destdir" value="/Users/seunghyunson/workspacese/Workspace_Java/Javaking/doc"/>
+				<item key="antpath" value="/Users/seunghyunson/workspacese/Workspace_Java/Javaking/javadoc.xml"/>
+			</section>
+			<section name="DBTest00">
+				<item key="href" value=""/>
+				<item key="destdir" value="/Users/seunghyunson/workspacese/Workspace_Java/DBTest00/doc"/>
+				<item key="antpath" value="/Users/seunghyunson/workspacese/Workspace_Java/DBTest00/javadoc.xml"/>
+			</section>
+			<section name="DBTest04">
+				<item key="href" value=""/>
+				<item key="destdir" value="/Users/seunghyunson/workspacese/Workspace_Java/DBTest04/doc"/>
+				<item key="antpath" value="/Users/seunghyunson/workspacese/Workspace_Java/DBTest04/javadoc.xml"/>
+			</section>
+			<section name="Java06_While">
+				<item key="href" value=""/>
+				<item key="destdir" value="/Users/seunghyunson/workspacese/Workspace_Java/Java06_While/doc"/>
+				<item key="antpath" value="/Users/seunghyunson/workspacese/Workspace_Java/Java06_While/javadoc.xml"/>
+			</section>
+			<section name="Java16_Exception">
+				<item key="href" value=""/>
+				<item key="destdir" value="/Users/seunghyunson/workspacese/Workspace_Java/Java16_Exception/doc"/>
+				<item key="antpath" value="/Users/seunghyunson/workspacese/Workspace_Java/Java16_Exception/javadoc.xml"/>
+			</section>
+			<section name="Java01_Type">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Workspaces\Workspace_Java\Java01_Type\doc"/>
+				<item key="antpath" value="C:\Workspaces\Workspace_Java\Java01_Type\javadoc.xml"/>
+			</section>
+			<section name="Java09_practise01">
+				<item key="href" value=""/>
+				<item key="destdir" value="/Users/seunghyunson/workspacese/Workspace_Java/Java09_practise01/doc"/>
+				<item key="antpath" value="/Users/seunghyunson/workspacese/Workspace_Java/Java09_practise01/javadoc.xml"/>
+			</section>
+			<section name="Sample">
+				<item key="href" value=""/>
+				<item key="destdir" value="/Users/seunghyunson/workspacese/Workspace_Java/Sample/doc"/>
+				<item key="antpath" value="/Users/seunghyunson/workspacese/Workspace_Java/Sample/javadoc.xml"/>
+			</section>
+			<section name="Array">
+				<item key="href" value=""/>
+				<item key="destdir" value="/Users/seunghyunson/workspacese/Workspace_Java/Array/doc"/>
+				<item key="antpath" value="/Users/seunghyunson/workspacese/Workspace_Java/Array/javadoc.xml"/>
+			</section>
+			<section name="DBTest03">
+				<item key="href" value=""/>
+				<item key="destdir" value="/Users/seunghyunson/workspacese/Workspace_Java/DBTest03/doc"/>
+				<item key="antpath" value="/Users/seunghyunson/workspacese/Workspace_Java/DBTest03/javadoc.xml"/>
+			</section>
+			<section name="Java14_Abstract_Interface">
+				<item key="href" value=""/>
+				<item key="destdir" value="/Users/seunghyunson/workspacese/Workspace_Java/Java14_Abstract_Interface/doc"/>
+				<item key="antpath" value="/Users/seunghyunson/workspacese/Workspace_Java/Java14_Abstract_Interface/javadoc.xml"/>
+			</section>
+			<section name="Java07_For">
+				<item key="href" value=""/>
+				<item key="destdir" value="/Users/seunghyunson/workspacese/Workspace_Java/Java07_For/doc"/>
+				<item key="antpath" value="/Users/seunghyunson/workspacese/Workspace_Java/Java07_For/javadoc.xml"/>
+			</section>
+			<section name="Java18_Thread">
+				<item key="href" value=""/>
+				<item key="destdir" value="/Users/seunghyunson/workspacese/Workspace_Java/Java18_Thread/doc"/>
+				<item key="antpath" value="/Users/seunghyunson/workspacese/Workspace_Java/Java18_Thread/javadoc.xml"/>
+			</section>
+			<section name="Java04_if">
+				<item key="href" value=""/>
+				<item key="destdir" value="/Users/seunghyunson/workspacese/Workspace_Java/Java04_if/doc"/>
+				<item key="antpath" value="/Users/seunghyunson/workspacese/Workspace_Java/Java04_if/javadoc.xml"/>
+			</section>
+			<section name="Practise">
+				<item key="href" value=""/>
+				<item key="destdir" value="/Users/seunghyunson/workspacese/Workspace_Java/Practise/doc"/>
+				<item key="antpath" value="/Users/seunghyunson/workspacese/Workspace_Java/Practise/javadoc.xml"/>
+			</section>
+		</section>
+	</section>
+	<section name="org.eclipse.jdt.internal.ui.text.QuickOutline">
+		<item key="GoIntoTopLevelTypeAction.isChecked" value="false"/>
+		<item key="org.eclipse.jdt.internal.ui.text.JavaOutlineInformationControlDIALOG_WIDTH" value="550"/>
+		<item key="org.eclipse.jdt.internal.ui.text.JavaOutlineInformationControlDIALOG_HEIGHT" value="460"/>
+		<item key="org.eclipse.jdt.internal.ui.text.JavaOutlineInformationControlDIALOG_USE_PERSISTED_SIZE" value="true"/>
+		<item key="org.eclipse.jdt.internal.ui.text.JavaOutlineInformationControlDIALOG_USE_PERSISTED_LOCATION" value="false"/>
+	</section>
+	<section name="BreadcrumbItemDropDown">
+	</section>
+	<section name="org.eclipse.jdt.internal.ui.dialogs.FilteredTypesSelectionDialog">
+		<item key="ShowStatusLine" value="true"/>
+		<item key="History" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0A;&lt;History/&gt;"/>
+		<section name="DialogBoundsSettings">
+			<item key="DIALOG_HEIGHT" value="432"/>
+			<item key="DIALOG_WIDTH" value="295"/>
+			<item key="DIALOG_X_ORIGIN" value="83"/>
+			<item key="DIALOG_Y_ORIGIN" value="112"/>
+			<item key="DIALOG_FONT_NAME" value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont"/>
+		</section>
+	</section>
+	<section name="JarPackageWizard">
+		<item key="JarPackageWizardPage.EXPORT_CLASS_FILES" value="true"/>
+		<item key="JarPackageWizardPage.EXPORT_OUTPUT_FOLDER" value="false"/>
+		<item key="JarPackageWizardPage.EXPORT_JAVA_FILES" value="false"/>
+		<item key="JarPackageWizardPage.REFACTORINGS" value="false"/>
+		<item key="JarPackageWizardPage.COMPRESS" value="true"/>
+		<item key="JarPackageWizardPage.INCLUDE_DIRECTORY_ENTRIES" value="false"/>
+		<item key="JarPackageWizardPage.OVERWRITE" value="false"/>
+		<item key="jarOptionsWizardPage.EXPORT_WARNINGS" value="true"/>
+		<item key="jarOptionsWizardPage.EXPORT_ERRORS" value="true"/>
+		<item key="jarOptionsWizardPage.STORE_USE_SRC_FOLDERS" value="false"/>
+		<item key="jarOptionsWizardPage.BUILD_IF_NEEDED" value="true"/>
+		<item key="jarOptionsWizardPage.SAVE_DESCRIPTION" value="false"/>
+		<item key="jarOptionsWizardPage.DESCRIPTION_LOCATION" value=""/>
+		<item key="JarManifestWizardPage.GENERATE_MANIFEST" value="true"/>
+		<item key="JarManifestWizardPage.SAVE_MANIFEST" value="false"/>
+		<item key="JarManifestWizardPage.REUSE_MANIFEST" value="false"/>
+		<item key="JarManifestWizardPage.MANIFEST_LOCATION" value=""/>
+		<item key="JarManifestWizardPage.SEAL_JAR" value="false"/>
+		<list key="JarPackageWizardPage.DESTINATION_NAMES_ID">
+			<item value="C:\Users\ssh\Desktop\MyScore.jar"/>
+		</list>
+	</section>
+	<section name="BuildPathsPropertyPage">
+		<item key="pageIndex" value="2"/>
+	</section>
+	<section name="org.eclipse.jdt.internal.ui.dialogs.OpenTypeSelectionDialog2">
+		<item key="ShowStatusLine" value="true"/>
+		<item key="History" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0A;&lt;History/&gt;"/>
+		<item key="WorkingSet" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0D;&#x0A;&lt;workingSet workingSetName=&quot;&quot;/&gt;"/>
+		<section name="DialogBoundsSettings">
+			<item key="DIALOG_HEIGHT" value="500"/>
+			<item key="DIALOG_WIDTH" value="600"/>
+			<item key="DIALOG_X_ORIGIN" value="671"/>
+			<item key="DIALOG_Y_ORIGIN" value="248"/>
+			<item key="DIALOG_FONT_NAME" value="1|맑은 고딕|9.0|0|WINDOWS|1|-18|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕"/>
+		</section>
+	</section>
+	<section name="SourceActionDialog.methods">
+		<item key="VisibilityModifier" value="1"/>
+		<item key="FinalModifier" value="false"/>
+		<item key="SynchronizedModifier" value="false"/>
+		<item key="Comments" value="false"/>
+		<item key="InsertPosition.v2" value="2"/>
+		<item key="LimitElements" value="false"/>
+		<item key="IgnoreDefault" value="true"/>
+		<item key="StringStyle" value="0"/>
+		<item key="LimitValue" value="10"/>
+		<item key="SkipNull" value="false"/>
+		<item key="ToStringTemplateSelected" value="0"/>
+	</section>
+	<section name="AddGetterSetterDialog">
+		<item key="SortOrdering" value="false"/>
+		<item key="RemoveFinal" value="false"/>
+	</section>
+	<section name="DialogBounds_GetterSetterTreeSelectionDialog">
+		<item key="DIALOG_X_ORIGIN" value="560"/>
+		<item key="DIALOG_Y_ORIGIN" value="59"/>
+		<item key="DIALOG_WIDTH" value="560"/>
+		<item key="DIALOG_HEIGHT" value="639"/>
+		<item key="DIALOG_FONT_NAME" value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont"/>
+	</section>
+	<section name="RefactoringWizard.preview">
+		<item key="width" value="600"/>
+		<item key="height" value="400"/>
+	</section>
+	<section name="org.eclipse.ltk.ui.refactoring.settings">
+		<item key="updateSimilarElements" value="false"/>
+		<item key="updateSimilarElementsMatchStrategy" value="1"/>
+		<item key="updateTextualMatches" value="false"/>
+		<item key="updateQualifiedNames" value="false"/>
+		<item key="patterns" value="*"/>
+		<item key="renameSubpackages" value="false"/>
+	</section>
+	<section name="JavaEditorCodeMiningConfigurationBlock">
+		<item key="expanded0" value="true"/>
+	</section>
+	<section name="SourceActionDialog.constructors">
+		<item key="VisibilityModifier" value="1"/>
+		<item key="FinalModifier" value="false"/>
+		<item key="SynchronizedModifier" value="false"/>
+		<item key="Comments" value="false"/>
+	</section>
+	<section name="GenerateConstructorUsingFieldsSelectionDialog">
+		<item key="OmitCallToSuper" value="false"/>
+	</section>
+	<section name="DialogBounds_GenerateConstructorUsingFieldsSelectionDialog">
+		<item key="DIALOG_X_ORIGIN" value="251"/>
+		<item key="DIALOG_Y_ORIGIN" value="72"/>
+		<item key="DIALOG_WIDTH" value="555"/>
+		<item key="DIALOG_HEIGHT" value="618"/>
+		<item key="DIALOG_FONT_NAME" value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont"/>
+	</section>
+	<section name="OverrideMethodDialog">
+		<item key="showtypes" value="true"/>
+	</section>
+	<section name="DialogBounds_OverrideMethodDialog">
+		<item key="DIALOG_X_ORIGIN" value="285"/>
+		<item key="DIALOG_Y_ORIGIN" value="140"/>
+		<item key="DIALOG_WIDTH" value="515"/>
+		<item key="DIALOG_HEIGHT" value="453"/>
+		<item key="DIALOG_FONT_NAME" value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont"/>
+	</section>
+	<section name="DialogBounds_SuperInterfaceSelectionDialog">
+		<item key="DIALOG_X_ORIGIN" value="99"/>
+		<item key="DIALOG_Y_ORIGIN" value="18"/>
+		<item key="DIALOG_WIDTH" value="394"/>
+		<item key="DIALOG_HEIGHT" value="456"/>
+		<item key="DIALOG_FONT_NAME" value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont"/>
+	</section>
+	<section name="DialogBounds_GenerateToStringDialog">
+		<item key="DIALOG_X_ORIGIN" value="653"/>
+		<item key="DIALOG_Y_ORIGIN" value="56"/>
+		<item key="DIALOG_WIDTH" value="555"/>
+		<item key="DIALOG_HEIGHT" value="641"/>
+		<item key="DIALOG_FONT_NAME" value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont"/>
+	</section>
+	<section name="ClasspathContainerSelectionPage">
+		<item key="index" value="7"/>
+	</section>
+</section>

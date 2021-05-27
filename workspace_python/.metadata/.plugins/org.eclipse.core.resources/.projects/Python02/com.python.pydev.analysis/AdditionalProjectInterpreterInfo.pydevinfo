@@ -1,0 +1,47 @@
+-- VERSION_5
+-- START DISKCACHE_3
+/Users/seunghyunson/workspaces/workspace_python/.metadata/.plugins/org.eclipse.core.resources/.projects/Python02/com.python.pydev.analysis/v2_indexcache
+crawling.star.starbucks|1620898280137404267|/Users/seunghyunson/workspaces/workspace_python/Python02/crawling/star/starbucks.py
+crawling.naver.movie|1620823901091674950|/Users/seunghyunson/workspaces/workspace_python/Python02/crawling/naver/movie.py
+crawling.naver.webtoon|1620824302976609677|/Users/seunghyunson/workspaces/workspace_python/Python02/crawling/naver/webtoon.py
+crawling.star.__init__|1620864542289663927|/Users/seunghyunson/workspaces/workspace_python/Python02/crawling/star/__init__.py
+crawling.naver.__init__|1620786800156747216|/Users/seunghyunson/workspaces/workspace_python/Python02/crawling/naver/__init__.py
+crawling.__init__|1620786800155134267|/Users/seunghyunson/workspaces/workspace_python/Python02/crawling/__init__.py
+crawling.insta.__init__|1620794214622922646|/Users/seunghyunson/workspaces/workspace_python/Python02/crawling/insta/__init__.py
+crawling.insta.insta02|1620901908156207783|/Users/seunghyunson/workspaces/workspace_python/Python02/crawling/insta/insta02.py
+crawling.insta.insta01|1620901903013328230|/Users/seunghyunson/workspaces/workspace_python/Python02/crawling/insta/insta01.py
+-- END DISKCACHE
+-- START DICTIONARY
+10
+5=/Users/seunghyunson/workspaces/workspace_python/Python02/crawling/star/starbucks.py
+6=crawling.star.starbucks
+7=/Users/seunghyunson/workspaces/workspace_python/Python02/crawling/naver/movie.py
+8=crawling.naver.movie
+3=/Users/seunghyunson/workspaces/workspace_python/Python02/crawling/insta/insta02.py
+9=/Users/seunghyunson/workspaces/workspace_python/Python02/crawling/insta/insta01.py
+2=crawling.naver.webtoon
+4=crawling.insta.insta02
+1=/Users/seunghyunson/workspaces/workspace_python/Python02/crawling/naver/webtoon.py
+10=crawling.insta.insta01
+-- END DICTIONARY
+-- START TREE 1
+15
+dl|1|dl!1^16#1*19@
+dri|1|driver!3^8#1*35@
+get|3|getStore!5^38#5*50@getGuGun!5^29#5*50@getSiDo!5^8#5*50@
+gug|1|gugun!5^80#9*51@
+lst|1|lst!1^19#1*19@
+mov|1|movies!7^13#1*67@
+res|5|resp!1^9#1*19@resp!9^10#1*83@res!1^37#1*19@resp!7^7#1*67@res_json!1^41#1*19@
+sid|1|sido!5^75#5*51@
+sou|4|soup!3^13#1*35@soup!1^11#1*19@soup!9^11#1*83@soup!7^10#1*67@
+sta|2|star!1^23#5*19@star!7^21#5*67@
+tag|1|tag!9^7#1*83@
+tit|2|title!1^22#5*19@title!7^19#5*67@
+tmp|1|tmp!1^26#5*19@
+url|2|url!9^8#1*83@url!3^6#1*35@
+web|1|webtoons!1^13#1*19@
+-- END TREE
+-- START TREE 2
+0
+-- END TREE

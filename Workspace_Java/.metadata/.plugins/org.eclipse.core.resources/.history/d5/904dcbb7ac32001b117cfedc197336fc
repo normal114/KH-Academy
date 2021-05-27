@@ -1,0 +1,26 @@
+package com.test02;
+
+public class RandomTest01 {
+
+	public static void main(String[] args) {
+		useMathClass();
+	
+			
+			// java.lang.Math
+	public static void useMathClass() {
+		// 0 <= ran < 1 1보다 작고 0보다 큰 실수타입이 만들어진다.
+
+	}
+
+	double ran = Math.random()
+	{
+		System.out.println(ran);
+
+		int min = 0;
+		int max = 10;
+		// (int)(Math.random() * (max - min + 1) + min;
+		int rd = (int) (Math.random() * (max - min + 1)) + min;
+		System.out.println("random : " + rd);
+
+	}
+}

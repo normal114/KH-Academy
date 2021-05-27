@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<style type="text/css">
+
+	div, p {
+		width: 200px;
+		height: 200px;
+		border: 1px solid red;
+	}
+	
+	#bg-size {
+		background: url("resources/img/img01.png");
+		/* background-size: cover; */
+		background-size: contain;
+	}
+
+	#multi-bg {
+		background-image: url("resources/img/img01.png"), url("resources/img/img02.png");
+		background-size: container;
+	}	
+	
+	#bg-clip {
+		border: 10px dotted black;
+		padding: 50px;
+		background: blue;
+/*		background-clip: content-box; */
+/*		background-clip: padding-box; */
+		background-clip: border-box;
+/* content-box는 실제 내용이 들어가는 만큼만 box로 만들어 준다. */
+/* padding-box는 안쪽 영역의 box만 잡아준다. */
+/* 테두리 라인까지 잡아주는 게 border-box이다. */
+
+	}
+	
+	#txt-shdw {
+		text-shadow: 1px 2px #ccc;
+/* text-shadow는 글자(text) 아래에 명암(그림자) 효과를 넣어준다.(가로로 1px 세로로 2px 가서) */
+	}
+	
+	#wrap {
+		word-wrap: break-word;
+/* wrod-wrap 속성이 없으면 한줄로 쭉 나올 것이다. 하지만 word-wrap는 p tag의 사각형 크기만큼 잘라준다. */
+	}
+	
+	@font-face {
+		font-family: "Goyang";
+		src: url("resources/font/Goyang.otf") format("truetype");
+		}
+/* font style file 위치를 설정한다. */
+	#goyang {
+		font-family: "Goyang";
+		font-size: 30pt;
+		}
+/* id="goyang"의 font style을 바꾼다. */
+
+</style>
+
+</head>
+<body>
+
+	<h1>background-size</h1>
+	<div id="bg-size">background-size</div>
+
+	<h1>multi-background</h1>
+	<div id="multi-bg">multi-background</div>
+
+	<h1>background-clip</h1>
+	<div id="bg-clip">background-clip</div>
+
+	<h1>text-shadow</h1>
+	<div id="txt-shdw">text-shadow</div>
+
+	<h1>word-wrap</h1>
+	<p id="wrap">dfkjaiopsdjfjasfjopajdospfjoajfdjoajodpfjopasjdpfoaor</p>
+	
+	<h1>font-face</h1>
+	<div id="goyang">고양시 고양체 귀엽다.</div>
+<!-- 네이버에 고양시 고양체를 쳐서 고양시 홈페이지에 들어간 다음 window용 또는 macos용 고양체 font를 수동으로 다운 받는다. 다음에 resources폴더에 font폴더를 만들고 그 위치로 드래그해서 copy&paste한다. -->	
+	
+</body>
+</html>

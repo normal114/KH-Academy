@@ -1,0 +1,18 @@
+# -*- coding:utf-8 -*-
+
+from flask import Flask, render_template
+from bs4 import BeautifulSoup
+import requests
+import json
+import flask_cors
+
+app = Flask(__name__)
+flask_cors.CORS(app)
+
+@app.route('/')
+def root():
+    return render_template('index01.html')
+
+
+
+@app.

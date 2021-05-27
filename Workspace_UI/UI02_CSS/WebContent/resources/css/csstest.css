@@ -1,0 +1,30 @@
+
+	/* 1 */
+	h1{
+		background-color: pink;
+	}
+	/* 2 */
+	#a{
+		color: red;
+	}
+	/* 3 */
+	.b{
+		color: blue;
+	}
+	/* 4 */
+	*{
+		padding: 2px;
+	}
+	/* 5 */
+	p > strong{
+		color: orange;
+	}
+	/* 6 */
+	p[id="c"] + p{
+		color: green;
+	}
+	/* 7 */
+	p[title]{
+		font-size: 20pt;
+	}
+	

@@ -1,0 +1,12 @@
+package com.mvc.semi.board.biz;
+
+public interface BoardBiz {
+
+	public List<BoardDto> accompany_selectList();
+	public List<BoardDto> notice_selectList();
+	public List<BoardDto> photo_selectList();
+	public BoardDto accompany_selectOne(int postId);
+	public BoardDto photo_selectOne(int postId);
+	public BoardDto notice_selectOne(int postId);
+	
+}

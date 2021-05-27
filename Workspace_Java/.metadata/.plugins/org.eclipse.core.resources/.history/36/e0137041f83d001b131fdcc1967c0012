@@ -1,0 +1,9 @@
+package Test;
+
+public class Test01 {
+
+	public static int sum(int i, int j) {
+		
+	}
+
+	

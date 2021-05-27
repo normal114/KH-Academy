@@ -1,0 +1,20 @@
+package Test;
+
+public class Test01 {
+
+	public static final int MY_TEN = 10;
+	
+	public static void main(String[] args) {
+		
+		int ten  = 100;
+		System.out.println(ten);
+		
+		System.out.println(op01(MY_TEN, 3));
+		System.out.println(op02());
+		
+		op03(MY_TEN, 3);
+		op04();
+		
+		String five = (op05())? "재밌다." : "즐겁다."
+	}
+}

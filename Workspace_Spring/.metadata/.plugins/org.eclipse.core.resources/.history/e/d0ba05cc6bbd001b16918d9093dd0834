@@ -1,0 +1,8 @@
+package com.mvc.semi.board.dao;
+
+public interface BoardDao {
+
+	public List<BoardDto> accompany_selectList();
+	public List<BoardDto> notice_selectList();
+	
+}

@@ -1,0 +1,15 @@
+package Test;
+
+public class StringGame03 {
+
+	public static void main(String[] args) {
+		
+		String word = "POWER";
+		String[] array_word;
+		
+		array_word = word.split(""); //배열에 한 글자씩 저장하기
+	}
+	
+	
+	
+}

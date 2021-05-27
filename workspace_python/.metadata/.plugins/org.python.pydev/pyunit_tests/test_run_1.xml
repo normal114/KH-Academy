@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?pydev-testrun version="1.0"?><pydev-testsuite>
+    <summary errors="1" failures="0" finished="true" name="Test Run: 1" tests="0" total_time="Finished in: 0.00 secs."/>
+    <test location="/Users/seunghyunson/workspaces/workspace_python/Python05/app.py" status="error" test="app" time="0">
+        <stdout/>
+        <stderr><![CDATA[Traceback (most recent call last):
+  File "/Users/seunghyunson/Desktop/Eclipse.app/Contents/Eclipse/plugins/org.python.pydev.core_8.3.0.202104101217/pysrc/_pydev_runfiles/pydev_runfiles.py", line 468, in __get_module_from_str
+    mod = __import__(modname)
+  File "/Users/seunghyunson/workspaces/workspace_python/Python05/app.py", line 7, in <module>
+    import flask_cors
+ModuleNotFoundError: No module named 'flask_cors'
+ERROR: Module: app could not be imported (file: /Users/seunghyunson/workspaces/workspace_python/Python05/app.py).
+]]></stderr>
+    </test>
+    <launch mode="run">
+        <launch_memento><![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration local="true" path="Python05 Python05"/>
+]]></launch_memento>
+    </launch>
+</pydev-testsuite>

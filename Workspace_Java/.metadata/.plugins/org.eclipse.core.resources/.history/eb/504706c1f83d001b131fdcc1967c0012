@@ -1,0 +1,24 @@
+package Test;
+
+public class Test01 {
+
+	public static int sum(int i, int j) {
+		System.out.print("i : " + i + "\t j: " + j + "\t result :");
+		int result = i + j;
+
+		return result;
+	}
+	
+	public static void sub(int i, int j) {
+		int result = i - j;
+		System.out.printf("%d - %d = %d\n, i, j, result");
+	
+	
+	}
+
+
+
+
+}
+
+	

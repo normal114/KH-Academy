@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;Criteria.java&apos; to &apos;SpringMVC03_filter_aop/src/main/java/com.mvc.upgrade.common.paging&apos;&#x0A;- Original project: &apos;SpringMVC03_filter_aop&apos;&#x0A;- Destination element: &apos;SpringMVC03_filter_aop/src/main/java/com.mvc.upgrade.common.paging&apos;&#x0A;- Original element: &apos;com.mvc.upgrade.model.dto.Criteria.java&apos;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.mvc.upgrade.common.paging" element1="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.mvc.upgrade.model.dto{Criteria.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" patterns="*" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1619406837819" units="1" version="1.0"/>
+</session>

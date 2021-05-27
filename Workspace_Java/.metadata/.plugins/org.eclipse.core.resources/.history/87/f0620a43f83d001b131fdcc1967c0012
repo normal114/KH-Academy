@@ -1,0 +1,11 @@
+package Test;
+
+public class Test01 {
+
+	public static int sum(int i, int j) {
+		System.out.print("i : " + i + "\t j: " + j + "\t result :");
+		int result = i + j;
+	}
+}
+
+	

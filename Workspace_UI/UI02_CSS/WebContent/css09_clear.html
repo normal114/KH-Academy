@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<style type="text/css">
+
+	*{
+		margin: 0px;
+		padding: 0px;
+	}
+	#wrapper {
+		width: 600px;
+		border: 1px dotted red;
+	}
+	#w01 {
+		float: right;
+		width: 200px;
+		padding: 15px;
+		background-color: skyblue;
+	}
+	#w02{
+		float: left;
+		width: 200px;
+		padding: 15px;
+		background-color: hotpink;
+	}
+	#w03{	
+/*		clear: left; 도 지정해보는 연습을 하고 */
+/*		clear: right; 도 지정해보는 연습을 해보자. */
+		background-color: gray;
+		padding: 10px;
+	}
+/* w01은 float를 right으로 지정하고 w02는 left로 지정함으로서 w03의 내용은 가운데에서 흐르게 된다. */
+/* clear는 float의 속성(영향)을 없애준다. w03의 clear를 left로 지정한다면 왼쪽에 있는 w02를 안 쓰기 때문에 밑으로 내려오고 clear를 right로 지정하면 오른쪽에 있는 w01의 right를 안 쓰기 때문에 w01의 왼쪽이 빈 칸이 된다. */
+</style>
+
+</head>
+<body>
+
+	<h1>lorem lipsum</h1>
+	
+	<div id="wrapper">
+	
+		<div id="w01">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam rutrum
+		
+		</div>
+		<div id="w02">
+			et enim quis condimentum. Donec et ante sed quam 
+			bibendum rhoncus. Vestibulum non arcu eu mauris facilisis tristique. 
+			Aliquam sem dui, ullamcorper ornare augue sit amet, facilisis vulputate eros. 
+			Donec eget nunc ut justo placerat interdum. 
+			Vivamus et arcu at ante maximus consectetur ac sed mi. 
+			Maecenas eu massa non est sollicitudin hendrerit. Cras id dictum eros. 
+			Integer ac felis vitae eros pulvinar iaculis sit amet a ipsum. 
+			Donec euismod urna velit, a scelerisque arcu feugiat ac. 
+			Nam semper in lacus a pretium. Mauris accumsan mauris libero,
+			nec molestie lorem vulputate et.
+			Interdum et malesuada fames ac ante ipsum primis in faucibus. 
+			Maecenas dignissim sit amet sapien sed interdum. 
+		</div>
+		<div id="w03">
+			Aliquam erat volutpat. Mauris sit amet feugiat ante. 
+			Sed ultrices dolor vel est lobortis, fringilla cursus diam convallis. 
+			Duis interdum malesuada eros pulvinar pellentesque. 
+			Sed sit amet mauris at tortor elementum volutpat. 
+			Curabitur elit justo, pulvinar ac mi a, tristique molestie sem. 
+			Mauris et lorem ut sem varius sodales sed at elit.
+		</div>
+		
+</body>
+</html>

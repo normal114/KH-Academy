@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<h1>01.기본 테이블 만들기</h1>
+	
+	<table border="1" style="width: 300px;">
+		<tr style="background-color: gray;">
+			<th>컬럼1</th>
+			<th>컬럼2</th>
+		</tr>
+<!-- 테이블의 1번째 row를 만든다. th는 컬럼이다. 가운데로 정렬된다. -->
+		<tr>
+			<td>1</td>
+			<td>2</td>
+		</tr>
+<!-- 테이블의 2번째 row를 만든다.	td는 데이터이다. 왼쪽으로 정렬된다.	-->
+		<tr>
+			<td>3</td>
+			<td>4</td>
+		</tr>
+
+	</table>
+<!-- 보통은 table태그를 안 쓰고 div태그를 쓴다. -->
+	
+	<h1>02. 주요 태그 사용해서 만들기</h1>
+	
+	<table border="1">
+		<caption>테이블 제목</caption>
+<!-- caption 테이블 전체 제목 -->
+		<colgroup>
+			<col width="100px" />
+			<col width="300px" />
+			<col width="500px" />
+		</colgroup>
+<!-- calgroup은 생략 가능하다. col은 컬럼들의 설정들이다. width는 넓이이다. -->
+<!-- 스타일 설정은 왠만하면 CSS에서 하자. -->
+		<thead>
+			<tr>
+				<th>컬럼 1</th>
+				<th>컬럼 2</th>
+				<th>컬럼 3</th>
+			</tr>
+		</thead>
+<!-- thead는 헤드이다. thead태그와 tfoot태그의 순서를 바꿔도 테이블은 똑같이 형성된다. 줄은 여러 개 만들 수 있다. -->	
+		<tbody>
+			<tr>
+				<td>1</td>
+				<td>2</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>5</td>
+				<td>6</td>
+			</tr>
+			<tr>
+				<td>7</td>
+				<td>8</td>
+				<td>9</td>
+			</tr>
+		</tbody>
+		
+		<tfoot>
+			<tr>
+				<td>footer1</td>
+				<td>footer2</td>
+				<td>footer3</td>
+			</tr>
+		</tfoot>
+	
+	</table>
+	
+	
+	<h1>03. 테이블 셀 병합하기</h1>
+	
+	<table border="1">
+		<thead style="background-color: skyblue;"><tr><th>컬럼1</th><th>컬럼2</th><th>컬럼3</th><th>컬럼4</th></tr></thead>
+		
+		<tbody>
+		
+			<tr>
+<!--			<td>1</td> 1번과 5번을 합칠 것이다. -->
+				<td rowspan="2">1</td>
+				<td>2</td>
+				<td>3</td>
+				<td>4</td>
+			</tr>
+			
+			<tr>
+<!-- 			<td>5</td> -->
+				<td>6</td>
+<!-- 			7번과 8번을 합칠 것이다. -->				
+				<td colspan="2">7</td>
+<!-- 			<td>7</td>
+				<td>8</td> -->
+			</tr>
+			
+		</tbody>
+		
+		<tfoot>
+			<tr>
+<!-- 9번을 한 줄로 합칠 것이다. -->
+				<td colspan="4">9</td>
+<!--			<td>9</td> -->
+			</tr>
+		</tfoot>
+		
+		</table>
+</body>
+</html>

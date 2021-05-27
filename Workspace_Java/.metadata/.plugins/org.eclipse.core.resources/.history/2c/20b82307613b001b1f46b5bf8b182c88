@@ -1,0 +1,28 @@
+package com.test03;
+
+import java.util.Arrays;
+
+import com.compare.Score;
+
+public class MTest02 {
+
+	public static void main(String[] args) {
+		// Score 객체 3개 만들자.
+		// 이름은 홍길동, 이순신, 김선달. 점수는 알아서.
+		Score s1 = new Score();
+		s1.setName("홍길동");	
+		s1.setKor(100);
+		s1.setEng(56);
+		s1.setMath(70);
+		
+		Score s2 = new Score("이순신", 57, 81, 100);
+		
+		Score s3 = new Score("김선달", 79, 100, 50);
+		// Score 객체를 관리할 수 있는 Set 객체를 만들자.
+		// Set type에, HashSet으로 만들자.
+		Set<Score> set = new HashSet<Score>();
+		set.add(s1);
+		set.add(s2);
+		set.add(s3);
+		
+		

@@ -1,0 +1,12 @@
+package com.myboard.dao;
+
+public class MyBoardDao {
+
+	public List<MyBoardDto> selectList(){
+		Connection con = getConnection();
+		
+		
+	}
+	
+	
+}

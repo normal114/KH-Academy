@@ -1,0 +1,8 @@
+MODULES_MANAGER_V3
+test.__init__|/Users/seunghyunson/workspaces/workspace_python/Python06/test/__init__.py
+test.hello|/Users/seunghyunson/workspaces/workspace_python/Python06/test/hello.py
+test.pymongo01_find|/Users/seunghyunson/workspaces/workspace_python/Python06/test/pymongo01_find.py
+test.pymongo02_insert|/Users/seunghyunson/workspaces/workspace_python/Python06/test/pymongo02_insert.py
+test.pymongo03_update|/Users/seunghyunson/workspaces/workspace_python/Python06/test/pymongo03_update.py
+test.pymongo04_delete|/Users/seunghyunson/workspaces/workspace_python/Python06/test/pymongo04_delete.py
+test.pymongo05_aggre|/Users/seunghyunson/workspaces/workspace_python/Python06/test/pymongo05_aggre.py

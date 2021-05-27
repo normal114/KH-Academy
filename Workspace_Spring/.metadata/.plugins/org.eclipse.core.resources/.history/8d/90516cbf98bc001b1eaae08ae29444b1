@@ -1,0 +1,39 @@
+package com.mvc.upgrade.model.dao;
+
+import java.util.List;
+
+import com.mvc.upgrade.model.dto.MYBoardDto;
+
+public class MYBoardDaoImpl implements MYBoardDao {
+
+	@Override
+	public List<MYBoardDto> selectList() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public MYBoardDto selectOne(int myno) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public int insert(MYBoardDto dto) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int update(MYBoardDto dto) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int delte(int myno) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

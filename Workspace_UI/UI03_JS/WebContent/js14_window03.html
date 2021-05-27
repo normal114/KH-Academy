@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>중복체크</title>
+
+<script type="text/javascript">
+	var ids=["khacademy","java","script"];
+	
+	function confirmChk(){
+		var id=document.getElementsByName("id")[0].value.trim(); // .trim();은 띄어쓰기 불가이다.
+		var div=document.getElementsByTagName("div")[0];
+		if(ids.indexOf(id)!=-1){
+			div.innerHTML="<b>아이디가 존재합니다.</b>";
+		}else{
+			var userId="사용할 수 있는 아이디입니다."
+			          +"<input type='button' value='확인'"
+			          +"onclick='insertId(\""+id+"\")>";
+			          // +"onclick='insertId("+id+")'>"; // \"   \"이 없을 경우에는 변수로 인식한다. 문자열로 인식시키기 위해서 반드시 \"    \"를 써야한다. 많은 시간을 뺏길 수 있다.
+					  // *********** \"    \"는 정말정말 중요하다. 
+			div.innerHTML=userId;          
+		}
+	}
+	
+	function insertId(id){
+		opener.document.getElementsByName("id")[0].value=id;
+		opener.document.getElementsByName("pwd")[0].focus(); // focus는 커서를 놓는다. pwd 0번지로 이동한다. 즉, 회원가입 창에 패스워드로 커서를 이동시켜서 깜빡이게 한다.
+		close();
+	}
+</script>
+
+</head>
+<body>
+
+	<table>
+		<tr>
+			<td>아이디</td>
+			<td><input type="text" name="id"/></td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<input type="button" value="중복확인" onclick="confirmChk()"/>
+				<input type="button" value="취소" onclick="self.close()"/> <!-- self.close는 지금 윈도우를 닫아달라는 의미이다. -->
+		</tr>
+	</table>
+	<div></div>
+
+</body>
+</html>

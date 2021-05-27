@@ -1,0 +1,11 @@
+package Test;
+
+public class Test01 {
+
+	public static final int MY_TEN = 10;
+	
+	public static void main(String[] args) {
+		
+		int ten  = 100;
+		
+	}

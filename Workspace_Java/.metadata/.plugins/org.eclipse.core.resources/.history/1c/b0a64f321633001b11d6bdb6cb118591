@@ -1,0 +1,19 @@
+
+public class Test {
+
+	public static void main(String[] args) {
+
+		prn();
+	}
+	
+	public static void prn() {
+		
+		int count = 0;
+		char c = 'C';
+		boolean stop = false;
+		
+		while(!stop) {
+			
+		}
+		
+	}

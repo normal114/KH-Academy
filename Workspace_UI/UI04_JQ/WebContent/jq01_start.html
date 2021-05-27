@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<style type="text/css">
+	img {
+		width: 200px;
+		height: 200px;
+		}
+</style>
+
+<script type="text/javascript" src="resources/js/jquery-3.5.1.min.js"></script>
+
+<script type="text/javascript">
+
+/*
+	jquery 기본 작성법 : css selector 표현식 (css 표현 + js 표현)
+
+	기능 구현 2가지!
+	1)
+	$(function(){
+		// 작성
+	});
+또는 
+	2)
+	$(document).ready(function(){
+		// 작성
+	});	
+
+// 1), 2)번은 window.onload = function(){}과 기능이 같다. $ = jQuery라는 뜻이다.
+*/
+
+	function highlight(){
+		$("#list01 > li").eq(0).css("background-color", "RoyalBlue"); // .eq(0) = id=list의 첫 번째(0)
+		// id list01의 자식태그 li의 0번지, eq는 태그의 목록을 선택해 주는 코드
+	}
+	
+	$(document).ready(function(){ // 여기는 onclick 부분이다. 따라서 첫 번째 거만 연결되어 있어서 첫 번째 그림만 클릭 가능하다.
+		$("img").click(function(){ // 여기는 밑의 body가 완성된 이후에 만들어진 것이다. 즉, resources/image/img01.png와 연결이 되어 있지 않다.
+			alert("이미지를 클락했습니다.");
+			$(this).hide();
+		});
+	});
+	
+	function showImg(){
+		$("img").show();	
+	}
+	function resizeImg(){
+		$("img").css("width","100px").css("height","100px");
+	}
+	function addImg(){
+		$("img").last().after("<img src='resources/image/img01.png'/>");
+	}
+	function toggleImg(){
+		$("img").toggle();
+	}
+	
+	
+</script>
+
+</head>
+<body>
+
+	<h1>jQuery 시작!</h1>
+	
+	<ul id="list01">
+		<li>1.셀렉터(css 표현식)</li>
+		<li>2.DOM</li>
+		<li>3.이벤트 메서드</li>
+		<li>4.이펙트 메서드</li>
+		<li>5.ajax</li>
+	</ul>
+	<button onclick="highlight();">리스트 강조하기</button>
+	
+	<hr/>
+	
+	<button onclick="showImg();">이미지 보이기</button>
+	<button onclick="resizeImg();">이미지 축소</button>
+	<button onclick="addImg();">이미지 추가</button>
+	<button onclick="toggleImg()">이미지 숨기기/보이기</button>
+	
+	<br/><br/>
+	
+	<div>
+		<img alt="test" src="resources/image/img01.png" />
+	</div>
+	
+<!-- 
+<script>
+	
+	$("img").click(function(){ 
+		alert("이미지를 클락했습니다.");
+		$(this).hide();
+	});
+		
+</script>
+위의 코드는 실행이 된다. 그 이유는 바디에 있는 내용을 쭉 만들고 여기를 만들기 때문에
+$("img").click(function(){}는 위의 $(document).ready(function(){}와 같은 역할을 하게 된다. 
+-->
+
+</body>
+</html>

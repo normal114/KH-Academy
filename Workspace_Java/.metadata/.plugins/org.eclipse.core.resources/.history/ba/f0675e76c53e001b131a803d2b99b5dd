@@ -1,0 +1,15 @@
+package Test;
+
+import Test.Test01;
+
+public class Test03 {
+	
+	public static void main(String[] args) {
+		AAA myA = new AAA();
+		myA.prn();
+		AAA paramA = new AAA(10);
+		paramA.prn();
+		System.out.println("abc : " + paramA.getAbc()));
+		
+	}
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;ApiJava/WebContent/login 복사본.jsp&apos; to &apos;login.jsp&apos;" description="Rename resource &apos;login 복사본.jsp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="WebContent/login 복사본.jsp" name="login.jsp" stamp="1617318875973" updateReferences="true"/>
+</session>

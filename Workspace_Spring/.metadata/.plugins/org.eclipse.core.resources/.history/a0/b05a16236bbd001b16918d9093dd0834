@@ -1,0 +1,10 @@
+package com.mvc.semi.board.dto;
+
+public class ScrapDto {
+	
+	private int scrap_user_no;
+	private int scrap_no;
+	private int scrap_post_id;
+	
+
+}

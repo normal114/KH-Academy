@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>윈도우 연습01</title>
+
+<style type="text/css">
+	#regist {
+		border: 1px solid black;
+		background: pink;
+		position: absolute;
+		top: 200px;
+		left: 500px;
+		display: none;
+	}
+</style>
+
+<!-- 
+	display : none;			//공간을 차지하지 않는다 (만들어지지 않은 상태)
+	visibility: hidden;		//공간을 차지하고, 보이지 않는다 (만들어져 있는 상태)
+ -->
+
+<script type="text/javascript">
+	function openWin() {
+		var url = "js14_window02.html"; // 요즘은 var보다 let, const 사용하는 추세이다.
+		var title = ""; // 열릴 영역를 말한다. ""는 새 브라우저이다. (window거나 iframe이나 tap이다.) iframe에서 만들어졌을 때 창닫기가 되지 않는 이유는 frame에서는 닫기가 작동되지 않는다.
+		var prop = "top=200px,left=600px,width=500px,height=500px"; // left는 창이 열리는 위치이다. 왼쪽에서 오른쪽 방향으로 600px 움직여서 창이 열릴 것이다.
+		window.open(url, title, prop);
+		// window.open(url, title); 같이 prop를 지정하지 않으면 새 탭으로 열린다.
+	}
+
+	function registForm() {
+		document.getElementById("regist").style.display = "block"; // block는 안만들어진 것을 보이게 만들어줘라.
+		document.body.style.background = "gray";
+
+		var btns = document.getElementsByName("btn");
+		for ( var i in btns) { // 향상된 for문이다.
+			// for (var i = 0; i < btns.length; i++){ 이다.
+			btns[i].disabled = "disabled"; // disabled는 name="bts"의 버튼을 사용하지 못하게 명령한다.
+		}
+	}
+
+	function closeWin() {
+		document.getElementById("regist").style.display = "none";
+		document.body.style.background = "white";
+
+		var btns = document.getElementsByName("btn");
+		for ( var i in btns) {
+			btns[i].disabled = ""; // disalbed 속성이 없어진다. 개발자도구에서 확인할 수 있다.
+		}
+	}
+
+	function idchk() {
+		alert("중복체크를 확인하세요");
+	}
+
+	function idCheck() {
+		open("js14_window03.html", "", "width=300px,height=300px");
+	}
+</script>
+
+</head>
+<body>
+
+	<h1>window객체</h1>
+	
+	<!-- <pre style="visibility: hidden;"> 위치는 잡아주지만 보이지 않는다. -->
+	<!-- <pre style="display: none;"> 위치 자체를 잡아주지 않는다. -->
+	<pre>
+	프로퍼티
+	 -document
+	 -history
+	 -location
+	 -navigator
+	 -screen
+	 -frames
+	 -parent
+	 -top
+	 -self
+	메서드
+	 -alert()
+	 -confirm()
+	 -prompt()
+	 -back()
+	 -forward()
+	 -setInterval()
+	 -clearInterval()
+	 -setTimeout()
+	 -open()
+	 -close()
+	 -scroll(),scrollBy(), scrollTo() 
+	</pre>
+
+	<div id="f1">
+		<h1>팝업창 만들기</h1>
+		<button onclick="openWin()" name="btn">창열기</button>
+		<hr>
+		<h1>회원가입하기(div팝업창)</h1>
+		<button onclick="registForm()" name="btn">회원가입</button>
+	</div>
+
+	<!-- 회원가입폼 시작 -->
+	<div id="regist">
+		<form>
+			<table>
+				<caption>회원가입</caption>
+				<tr>
+					<td>아이디</td>
+					<td><input type="text" name="id" onclick="idchk()" readonly="readonly" /> <!-- idchk()는 무조건 중복체크를 하라는 명령이다. --> 
+					<input type="button" value="중복체크" onclick="idCheck()" /></td>
+				</tr>
+				<tr>
+					<td>패스워드</td>
+					<td><input type="password" name="pwd" alt="" style="color: red;" checked="checked" /></td> <!-- alt는 img에서 경로가 없을 때 설명해주는 것이고 checked는 checkbox에서 사용하는 코드이다. -->
+				</tr>
+				<tr>
+					<td colspan="2" align="center"><input type="button" value="확인" onclick="closeWin()" /></td>
+				</tr>
+			</table>
+		</form>
+	</div>
+	<!-- 회원가입폼 종료 -->
+
+	<br/><br/><br/>
+	<iframe name="myframe"></iframe>
+
+</body>
+</html>

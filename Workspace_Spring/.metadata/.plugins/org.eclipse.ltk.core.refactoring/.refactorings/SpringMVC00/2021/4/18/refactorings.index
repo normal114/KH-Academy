@@ -1,0 +1,6 @@
+1619673323303	Move 'root-context.xml' to 'appServlet'
+1619673330141	Rename resource 'root-context.xml'
+1619674879870	Rename type 'MYMemberDao'
+1619681279956	Rename resource 'myboard-mapperxml.xml'
+1619683290786	Delete element
+1619683365876	Rename type 'MYBoardBIz'

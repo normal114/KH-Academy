@@ -1,0 +1,31 @@
+package Test;
+
+public class Test02 {
+	
+	public static void main(String[] args) {
+		
+		Test02.publicMethod();
+		Test02.protectedMethod();
+		defaultMethod();
+		privateMethod();
+		
+	}
+	
+	public static void publicMethod() {
+		System.out.println("public Method 호출!");
+	}
+	
+	protected static void protectedMethod() {
+		System.out.println("protected Method 호출!");
+	}
+	static void defaultMethod() {
+		System.out.println("default Method 호출!");
+	}
+	private static void privateMethod() {
+		System.out.println("private Method 호출!");
+	}
+	public void nonStaticMethod() {
+		System.out.println("MethodTest01의 non-static method 호출!");
+	}
+
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+    <typeInfo handle="=Jsp02_MultiDelete/src&lt;com.muldel.dao{MDBoardDao.java[MDBoardDao" modifiers="513" timestamp="1613615068000"/>
+    <typeInfo handle="=Jsp02_MultiDelete/src&lt;com.muldel.biz{MDBoardBiz.java[MDBoardBiz" modifiers="513" timestamp="1613610939000"/>
+    <typeInfo handle="=Jsp03_MVC/src&lt;com.mvc.biz{MVCBoardBiz.java[MVCBoardBiz" modifiers="513" timestamp="1613618944000"/>
+    <typeInfo handle="=Jsp03_MVC/src&lt;com.mvc.dao{MVCBoardDao.java[MVCBoardDao" modifiers="513" timestamp="1614768633000"/>
+    <typeInfo handle="=Jsp06_Scope/\/Library\/Java\/JavaVirtualMachines\/jdk-15.0.1.jdk\/Contents\/Home\/lib\/jrt-fs.jar`java.desktop=/owner.project.facets=/java=/&lt;javax.swing(JFrame.class[JFrame" modifiers="33" timestamp="1600179063000"/>
+    <typeInfo handle="=Jsp08_MVC/src&lt;com.mvc.biz{MVCBoardBiz.java[MVCBoardBiz" modifiers="513" timestamp="1614224930000"/>
+    <typeInfo handle="=Jsp08_MVC/src&lt;com.mvc.dao{MVCBoardDao.java[MVCBoardDao" modifiers="513" timestamp="1614579224000"/>
+    <typeInfo handle="=Jsp09_AnswerBoard/src&lt;com.answer.dao{AnswerDao.java[AnswerDao" modifiers="513" timestamp="1615194865000"/>
+    <typeInfo handle="=Jsp09_AnswerBoard/src&lt;com.answer.biz{AnswerBiz.java[AnswerBiz" modifiers="513" timestamp="1614743387000"/>
+    <typeInfo handle="=Model2-master/src&lt;net.board.action{Action.java[Action" modifiers="513" timestamp="1614726016000"/>
+</typeInfoHistroy>

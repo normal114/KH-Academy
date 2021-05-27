@@ -1,0 +1,29 @@
+package Test;
+
+public class Test01 {
+
+	public static void main(String[] args) {
+
+		int i = 65;
+		char c = (char)i;
+		System.out.println(c);
+		
+		char c2 = 'B';
+		int i2 = c2;
+		System.out.println(i2);
+		
+		char c3 = '1';
+		char c4 = '9';
+		int i3 = c3 + c4;
+		System.out.println(i3);
+		
+		String str = "33";
+		System.out.println(str + 1);
+		int i4 = Integer.parseInt(str);
+		System.out.println(i4 + 1);
+		
+		int i5 = 55;
+		System.out.println(i5 + 1);
+		String s5 = Integer.toString(i5)
+	}
+}

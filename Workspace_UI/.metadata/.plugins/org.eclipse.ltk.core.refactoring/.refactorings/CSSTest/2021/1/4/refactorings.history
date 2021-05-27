@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;CSSTest/WebContent/css07_box.htm&apos; to &apos;css07_box.html&apos;" description="Rename resource &apos;css07_box.htm&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="WebContent/css07_box.htm" name="css07_box.html" stamp="1611391162403" updateReferences="true"/>
+</session>

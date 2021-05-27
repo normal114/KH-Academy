@@ -1,0 +1,17 @@
+package com.myboard.dao;
+
+public class MyBoardDao {
+
+	public List<MyBoardDto> selectList(){
+		Connection con = getConnection();
+		String sql = " SELECT MYNO, MYNAME, MYTITLE, MYCONTENT, MYDATE "
+				   + " FROM BOARD "
+				   + " ORDER BY MYNO DESC ";
+		
+		
+		
+		
+	}
+	
+	
+}

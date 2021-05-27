@@ -1,0 +1,15 @@
+package Test;
+
+public class Test01 {
+
+	public static void main(String[] args) {
+
+		int i = 65;
+		char c = (char)i;
+		System.out.println(c);
+		
+		char c2 = 'B';
+		int i2 = c2;
+		System.out.println(i2);
+	}
+}

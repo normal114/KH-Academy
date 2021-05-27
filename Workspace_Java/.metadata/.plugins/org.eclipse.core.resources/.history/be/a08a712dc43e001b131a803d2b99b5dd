@@ -1,0 +1,47 @@
+package Test;
+
+import java.util.Arrays;
+
+public class Test03 {
+
+	public static void main(String[] args) {
+
+		char[] ch = new char[26];
+		for (int i = 0; i < ch.length; i++) {
+			ch[i] = (char) ('a' + i);
+		}
+			System.out.println(Arrays.toString(ch));
+	
+		for (int i = 0; i <= ch.length; i++) {
+			System.out.print(ch[i - 1] + " ");
+			if (i % 6 == 0) {
+				System.out.println();
+			}
+		}
+		
+		System.out.println("\n");
+		
+		int tmp = 1;
+		
+		for (int i = ch.length; i > 0; i-- ) {
+			System.out.printf("%s ", ch[i - 1]);
+			if (tmp % 6 == 0) {
+				System.out.println();
+			}
+			
+			tmp ++
+			}
+		System.out.println("\n");
+		
+		int cnt = 1;
+		for (int i = 0; i < ch.length; i++ ) {
+			ch[i] = Character.toUpperCase(ch[i]);
+			System.out.printf("%s ", ch[i]);
+			s
+	
+	
+	
+	}
+
+	}
+}

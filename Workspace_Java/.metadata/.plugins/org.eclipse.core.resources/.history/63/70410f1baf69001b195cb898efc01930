@@ -1,0 +1,13 @@
+package com.test01;
+
+public class Type02 {
+
+	public static void main(String[] args) {
+		
+		byte b01 = 126;
+		System.out.println(b01);
+		b01 = 111;
+		System.out.println(b01);
+		
+	}
+}

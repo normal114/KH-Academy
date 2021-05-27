@@ -1,0 +1,5 @@
+package Test;
+
+public class Test01 {
+
+	public static filnal int MY_TEN = 10;

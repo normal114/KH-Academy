@@ -1,0 +1,12 @@
+package Test;
+
+public class Test01 {
+
+	public static void main(String[] args) {
+
+		Test02.publicMethod();
+		Test02.protectedMethod();
+		Test02.defaultMethod();
+		
+		Test02 method01 = new Test02();
+		method01.nonStaticMethod();

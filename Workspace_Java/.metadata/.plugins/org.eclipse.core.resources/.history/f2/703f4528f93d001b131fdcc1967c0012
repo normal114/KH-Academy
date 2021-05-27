@@ -1,0 +1,10 @@
+package Test;
+
+public class Test02 {
+	
+	public static void main(String[] args) {
+		
+	int mySum = Test01.sum(10, 2);
+	System.out.println(mySum);
+	
+	Test01.sun(10, 3);

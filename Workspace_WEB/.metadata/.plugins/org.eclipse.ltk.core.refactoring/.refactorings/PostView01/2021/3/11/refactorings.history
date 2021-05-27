@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;com.board.dto.boardDTO.java&apos; to &apos;BoardDTO.java&apos;&#x0A;- Original project: &apos;PostView01&apos;&#x0A;- Original element: &apos;com.board.dto.boardDTO.java&apos;&#x0A;- Renamed element: &apos;com.board.dto.BoardDTO.java&apos;" description="Rename compilation unit &apos;boardDTO.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;com.board.dto{boardDTO.java" name="BoardDTO.java" references="false" stamp="1615296497171" version="1.0"/>
+</session>
