@@ -2,8 +2,8 @@
 
 + Java
 - Type
-Method
-Operator
+- Method
+- Operator
 If문
 Switch문
 While문
